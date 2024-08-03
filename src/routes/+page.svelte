@@ -14,6 +14,7 @@
 </head>
 
 <main>
+  <button>Contact</button>
   <div class="container">
     <div class="left">
       <h1 id="software-title">Aspiring Software Engineer</h1>
@@ -23,8 +24,15 @@
     </div>
   </div>
 
-  <h3 id="coding-portfolio">View Coding Portfolio</h3>
-  <h3 id="design-portfolio">View Design Portfolio</h3>
+  <div class="container1">
+    <div class="left1">
+      <h3 id="coding-portfolio"><a href='/'>View Coding Portfolio</a></h3>
+    </div>
+
+    <div class="right1">
+      <h3 id="design-portfolio"><a href='/'>View Design Portfolio</a></h3>
+    </div>
+  </div>
 </main>
 
 <style>
@@ -66,16 +74,61 @@
   h3 {
     text-align: center;
     font-weight: 400;
+    margin: 0;
+    margin-bottom: 80px;
   }
 
   #coding-portfolio {
     color: black;
-    margin-right: 20%;
+    margin-left: 60%;
   }
 
   #design-portfolio {
     color: white;
-    margin-left: 20%;
+    margin-right: 60%;
   }
 
+  .container1 {
+    display: flex;
+    height: 0vh;
+
+  }
+
+  .right1, .left1 {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  button {
+    font-family: "Goldman", sans-serif;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 25px;
+    width: 150px;
+    padding: 13px;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+  }
+
+  button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+  }
 </style>
