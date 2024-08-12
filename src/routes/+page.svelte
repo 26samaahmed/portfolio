@@ -1,6 +1,7 @@
 <script>
   import NavBar from '../components/NavBar.svelte';
-
+  import white_arrow from '$lib/assets/white_arrow.png';
+  import black_arrow from '$lib/assets/black_arrow.png';
 </script>
 
 <head>
@@ -13,19 +14,19 @@
 
 <main>
   <div class="flex flex-col md:flex-row h-screen">
-   <!-- <button class="absolute top-10 right-10 bg-transparent border-2 border-white rounded-full w-150 p-3 px-8 text-20 cursor-pointer text-white hover:bg-white hover:text-black">Contact</button>-->
-
-    <div class="flex-1 bg-white h-full content-center text-center"> 
-      <h1 class="text-black text-4xl">Aspiring Software Engineer</h1>
-        <h3 class="text-black mt-24 absolute bottom-2"><a href='/coding-portfolio' class="no-underline hover:underline">View Coding Portfolio</a></h3>
+    <div class="flex-1 bg-white h-full flex flex-col justify-center items-center"> 
+      <h1 class="text-black text-2xl sm:text-4xl">Aspiring Software Engineer</h1>
+      <img src={white_arrow} alt="white arrow" class="w-10 h-10 mt-24"/>
+      <h3 class="text-black text-2xl mt-24"><a href='/coding-portfolio' class="no-underline hover:underline">View Coding Portfolio</a></h3>
     </div>
-
-    <div class="flex-1 bg-black h-full content-center text-center">
-      <h1 class="text-white text-4xl">Aspiring Designer</h1>
-      <h3 class="text-white mt-24 absolute bottom-2"><a href='/' class="no-underline hover:underline">View Design Portfolio</a></h3>
+  
+    <div class="flex-1 bg-black h-full flex flex-col justify-center items-center">
+      <h1 class="text-white text-2xl sm:text-4xl">Aspiring Designer</h1>
+      <img src={black_arrow} alt="black arrow" class="w-10 h-10 mt-24"/>
+      <h3 class="text-white text-2xl mt-24"><a href='/' class="no-underline hover:underline">View Design Portfolio</a></h3>
     </div>
-
   </div>
+  
 </main>
 
 <style>
