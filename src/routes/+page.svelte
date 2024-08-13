@@ -23,7 +23,7 @@
     <div class="flex-1 bg-black h-full flex flex-col justify-center items-center">
       <h1 class="text-white text-2xl sm:text-4xl">Aspiring Designer</h1>
       <img src={black_arrow} alt="black arrow" class="w-10 h-10 mt-24"/>
-      <h3 class="text-white text-2xl mt-24"><a href='/' class="no-underline hover:underline">View Design Portfolio</a></h3>
+      <h3 class="text-white text-2xl mt-24"><a href='/design-portfolio' class="no-underline hover:underline">View Design Portfolio</a></h3>
     </div>
   </div>
   
