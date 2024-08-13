@@ -23,6 +23,17 @@
     {i: 9, name: 'Halazia', artist: 'Ateez', link: 'https://open.spotify.com/track/5cTnKClHyczcUhFT8MKBZe?si=126f2c7b3d00420e', img: 'placeholder'},
     {i: 10, name: 'Slash', artist: 'Stray Kids', link: 'https://open.spotify.com/track/2MKGrYH1PyPAUKu2Sl8IaT?si=5cc880ba2fc84cb2', img: 'placeholder'},
   ]
+
+  let top_books = [
+    {i: 1, name: 'We are not free', author: 'Traci Chee', link: 'https://www.goodreads.com/book/show/49934666-we-are-not-free'},
+    {i: 2, name: 'Legend', author: 'Marie Lu', link: 'https://www.goodreads.com/book/show/29863662-legend'},
+    {i: 3, name: 'Prodigy', author: 'Marie Lu', link: 'https://www.goodreads.com/book/show/13414446-prodigy'},
+    {i: 4, name: 'Champion', author: 'Marie Lu', link: 'https://www.goodreads.com/book/show/18291576-champion'},
+    {i: 5, name: 'Alone with you in the ether', author: 'Olivie Blake', link: 'https://www.goodreads.com/book/show/61126612-alone-with-you-in-the-ether'},
+    {i: 6, name: 'Girl in pieces', author: 'Kathleen Glasgow', link: 'https://www.goodreads.com/book/show/29236380-girl-in-pieces'},
+    {i: 7, name: 'Normal People', author: 'Sally Rooney', link: 'https://www.goodreads.com/book/show/41057294-normal-people'},
+    {i: 8, name: 'Today Tonight Tomorrow', author: 'Rachel Lynn Solomon', link: 'https://www.goodreads.com/book/show/52766407-today-tonight-tomorrow'},
+  ]
 </script>
 
 <main>
@@ -37,12 +48,12 @@
     <h1 class="text-4xl text-black mb-5">College Highlights</h1>
     <div class="flex flex-row space-x-5">
       <div class="w-1/2 h-3/4 text-center">
-        <img src={college_highlight1} alt="college highlight 1" class="rounded-xl mb-5"/>
+        <img src={college_highlight1} alt="college highlight 1" class="rounded-md mb-5"/>
         <p>Open Source Software Team Member</p>
         <p>📍End of Semester Ceremony Fall 2023</p>
       </div>
       <div class="w-1/2 h-3/4 text-center">
-        <img src={college_highlight2} alt="college highlight 2" class="rounded-xl mb-5"/>
+        <img src={college_highlight2} alt="college highlight 2" class="rounded-md mb-5"/>
         <p>ACM CSUF Design Officer</p>
         <p>📍First workshop of Spring 2024</p>
       </div>  
@@ -64,14 +75,26 @@
     <p class="text-lg text-black mb-5">Check out more on my <a class="underline " href="https://github.com/26samaahmed" target="_blank">github</a></p>
   </div>
 
-  <div class="flex flex-col ml-20 mr-20 mt-10">
-    <div class="bg-[#C7D8FF] p-10 rounded-md">
-      <h1 class="text-2xl text-black mb-5">Top songs this month:</h1>
-      {#each top_songs as song}
-        <p class="text-md text-black">{song.i}. <a href={song.link} class='underline font-bold'>{song.name}</a> by {song.artist}</p>
-      {/each}
+  <div class="flex flex-row ml-20 mr-20 mt-10 space-x-10">
+    <div class="flex-1">
+      <div class="bg-[#C7D8FF] p-10 rounded-md">
+        <h1 class="text-2xl text-black mb-5">Top songs this month:</h1>
+        {#each top_songs as song}
+          <p class="text-md text-black">{song.i}. <a href={song.link} class='underline font-bold'>{song.name}</a> by {song.artist}</p>
+        {/each}
+      </div>
     </div>
-    
+
+    <div class="flex-1">
+      <div class="bg-[#B8EBFF] p-10 rounded-md">
+        <h1 class="text-2xl text-black mb-5">Top books:</h1>
+        {#each top_books as book}
+          <p class="text-md text-black">{book.i}. <a href={book.link} class='underline font-bold'>{book.name}</a> by {book.author}</p>
+        {/each}
+
+        <p class="text-lg text-black mt-5">Current Read: <a class="underline font-bold" href="https://www.goodreads.com/book/show/28421168-renegades" target="_blank">Renegades</a> by Marissa Meyer</p>
+      </div>
+    </div>
   </div>
 </main>
 
