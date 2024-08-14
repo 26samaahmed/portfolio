@@ -1,7 +1,8 @@
 <script>
   import NavBar from '../../components/NavBar.svelte';
   import college_highlight1 from '$lib/assets/college_highlight1.jpg';
-  import college_highlight2 from '$lib/assets/college_highlight2.jpg';
+  import college_highlight5 from '$lib/assets/college_highlight5.jpg';
+  import college_highlight3 from '$lib/assets/college_highlight3.jpg';
   let resume = 'https://drive.google.com/file/resume.pdf';
 
   let projects =[
@@ -38,43 +39,51 @@
 
 <main>
   <NavBar />
-  <div class="flex flex-col border-black border-4 ml-20 mr-20 mt-10 text-center rounded-md p-56">
-    <h1 class="text-7xl text-black mb-10"> Sama Ahmed</h1>
-    <h2 class="text-4xl text-black mb-5">computer science student <br> @california state university, fullerton</h2>
-    <h2 class="text-3xl text-black">check out my resume <a href={resume} class="text-blue-500">here</a></h2>
+  <div class="flex flex-col border-black border-4 ml-20 mr-20 mt-10 text-center rounded-md p-52" id="intro-container">
+    <h1 class="text-7xl  mb-10"> Sama Ahmed</h1>
+    <h2 class="text-4xl  mb-5">computer science student <br> @california state university, fullerton</h2>
+    <h2 class="text-3xl ">check out my resume <a href={resume} class="text-blue-500">here</a></h2>
   </div>
 
   <div class="flex flex-col ml-20 mr-20 mt-10">
     <h1 class="text-4xl text-black mb-5">College Highlights</h1>
     <div class="flex flex-row space-x-5">
-      <div class="w-1/2 h-3/4 text-center">
-        <img src={college_highlight1} alt="college highlight 1" class="rounded-md mb-5"/>
+      <div class="w-1/3 h-3/4 text-center">
+        <img src={college_highlight1} alt="college highlight 1" class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
         <p>Open Source Software Team Member</p>
-        <p>📍End of Semester Ceremony Fall 2023</p>
+        <p>📍End of Semester Ceremony. Fall 2023</p>
       </div>
-      <div class="w-1/2 h-3/4 text-center">
-        <img src={college_highlight2} alt="college highlight 2" class="rounded-md mb-5"/>
+      <div class="w-1/3 h-3/4 text-center">
+        <img src={college_highlight5} alt="college highlight 5" class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
         <p>ACM CSUF Design Officer</p>
-        <p>📍First workshop of Spring 2024</p>
+        <p>📍End of Semester Meeting, Spring 2024</p>
+      </div>  
+  
+      <div class="w-1/3 h-3/4 text-center">
+        <img src={college_highlight3} alt="college highlight 3" class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
+        <p>FullyHacks Design Officer</p>
+        <p>📍Hackathon with 400+ applicants, Spring 2024</p>
       </div>  
     </div>
   </div>
+  
 
 
 
   <div class="flex flex-col ml-20 mr-20 mt-10">
     <h1 class="text-4xl text-black mb-5">Projects</h1>
     {#each projects as project}
-      <div class="flex flex-col bg-black rounded-xl p-5 mb-5">
-        <h2 class="text-2xl text-white mb-2">{project.name}</h2>
-        <h3 class="text-white mb-2">Tech Stack: {project.teck_stack}</h3>
-        <p class="text-white mb-2">- {project.description}</p>
+      <div class="flex flex-col bg-black text-white rounded-xl p-5 mb-7" id="project-container">
+        <h2 class="text-2xl mb-2">{project.name}</h2>
+        <h3 class= "mb-2">Tech Stack: {project.teck_stack}</h3>
+        <p class= "mb-2">- {project.description}</p>
         <a href={project.link} target="_blank" class="text-blue-500">View Project</a>
       </div>
     {/each}
-    <p class="text-lg text-black mb-5">Check out more on my <a class="underline " href="https://github.com/26samaahmed" target="_blank">github</a></p>
+    <p class="text-lg text-black mb-5 text-end mr-4">Check out more on my <a class="underline " href="https://github.com/26samaahmed" target="_blank">github</a></p>
   </div>
 
+  <!--
   <div class="flex flex-row ml-20 mr-20 mt-10 space-x-10">
     <div class="flex-1">
       <div class="bg-[#C7D8FF] p-10 rounded-md">
@@ -96,10 +105,29 @@
       </div>
     </div>
   </div>
+  -->
 </main>
 
 <style>
   :global(body) {
     background-color: white;
+  }
+
+  #intro-container {
+    transition: 0.3s;
+  }
+  #intro-container:hover {
+    background-color: black;
+    color: white;
+  }
+
+  #project-container {
+    transition: 0.3s;
+  }
+
+  #project-container:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
   }
 </style>

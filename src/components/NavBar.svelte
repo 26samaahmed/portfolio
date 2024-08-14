@@ -21,13 +21,13 @@ let buttons = [
   <nav class="flex ml-20 mr-20 mt-7 text-black">
     <div class="flex-1 justify-start space-x-8">
       {#each socials as social}
-        <a href={social.link} class="no-underline hover:underline text-2xl"><img src={social.img} alt={social.name} class="w-10 h-10 inline-block"/></a>
+        <a href={social.link} target="_blank" class="no-underline hover:underline text-2xl"><img src={social.img} alt={social.name} class="w-10 h-10 inline-block"/></a>
       {/each}
     </div>
 
     <div class="flex justify-end space-x-8">
       {#each buttons as button}
-        <a href={button.link} class="no-underline hover:underline text-2xl">{button.name}</a>
+        <a href={button.link} target="_blank" class="no-underline hover:underline text-2xl">{button.name}</a>
       {/each}
     </div>
   </nav>
