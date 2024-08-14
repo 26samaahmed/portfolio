@@ -35,6 +35,7 @@
     {i: 7, name: 'Normal People', author: 'Sally Rooney', link: 'https://www.goodreads.com/book/show/41057294-normal-people'},
     {i: 8, name: 'Today Tonight Tomorrow', author: 'Rachel Lynn Solomon', link: 'https://www.goodreads.com/book/show/52766407-today-tonight-tomorrow'},
   ]
+
 </script>
 
 <main>
@@ -48,18 +49,18 @@
   <div class="flex flex-col ml-20 mr-20 mt-10">
     <h1 class="text-4xl text-black mb-5">College Highlights</h1>
     <div class="flex flex-row space-x-5">
-      <div class="w-1/3 h-3/4 text-center">
+      <div class="w-1/3  text-center">
         <img src={college_highlight1} alt="college highlight 1" class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
         <p>Open Source Software Team Member</p>
         <p>📍End of Semester Ceremony. Fall 2023</p>
       </div>
-      <div class="w-1/3 h-3/4 text-center">
+      <div class="w-1/3 text-center">
         <img src={college_highlight5} alt="college highlight 5" class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
         <p>ACM CSUF Design Officer</p>
         <p>📍End of Semester Meeting, Spring 2024</p>
       </div>  
   
-      <div class="w-1/3 h-3/4 text-center">
+      <div class="w-1/3 text-center">
         <img src={college_highlight3} alt="college highlight 3" class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
         <p>FullyHacks Design Officer</p>
         <p>📍Hackathon with 400+ applicants, Spring 2024</p>
@@ -70,8 +71,7 @@
 
 
 
-  <div class="flex flex-col ml-20 mr-20 mt-10">
-    <h1 class="text-4xl text-black mb-5">Projects</h1>
+  <div class="flex flex-col ml-20 mr-20 mt-10" id="projects">
     {#each projects as project}
       <div class="flex flex-col bg-black text-white rounded-xl p-5 mb-7" id="project-container">
         <h2 class="text-2xl mb-2">{project.name}</h2>

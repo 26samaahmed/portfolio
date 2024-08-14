@@ -3,16 +3,24 @@
   import mail from '$lib/assets/white_mail_logo.png';
 
 
-let socials = [
-  {name: 'LinkedIn', link: 'https://www.linkedin.com/in/sama-ahmedd/', img: linkedin},
-  {name: 'Email', link: '', img: mail}
-]
+  let socials = [
+    {name: 'LinkedIn', link: 'https://www.linkedin.com/in/sama-ahmedd/', img: linkedin},
+    {name: 'Email', link: '', img: mail}
+  ]
 
-let buttons = [
-  {name: 'Home', link: '/'},
-  {name: 'Projects', link: '/projects'},
-  {name: 'Design Gallery', link: 'https://design-record.vercel.app/'}
-]
+  let buttons = [
+    {name: 'Home', link: '/'},
+    {name: 'Projects', link: '#projects'},
+    {name: 'Design Gallery', link: 'https://design-record.vercel.app/'}
+  ]
+
+  function scrollIntoView({ target }) {
+        const el = document.querySelector(target.getAttribute('href'));
+        if (!el) return;
+        el.scrollIntoView({
+          behavior: 'smooth'
+        });
+  }
 
 </script>
 
@@ -26,7 +34,11 @@ let buttons = [
 
     <div class="flex justify-end space-x-8">
       {#each buttons as button}
-        <a href={button.link} target="_blank" class="no-underline hover:underline text-2xl">{button.name}</a>
+        {#if button.link === '#projects'}
+          <a href={button.link} on:click|preventDefault={scrollIntoView} class="no-underline hover:underline text-2xl">{button.name}</a>
+        {:else}
+          <a href={button.link} class="no-underline hover:underline text-2xl">{button.name}</a>
+        {/if}
       {/each}
     </div>
   </nav>
