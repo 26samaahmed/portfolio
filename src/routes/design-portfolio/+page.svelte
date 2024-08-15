@@ -7,57 +7,53 @@
   import project2 from '$lib/assets/design_project2.png';
   let resume = 'https://drive.google.com/file/resume.pdf';
 
+  let college_highlights = [
+    {img: college_highlight2, title: 'ACM CSUF Design Officer', info: '📍First workshop of Spring 2024'},
+    {img: college_highlight4, title: 'ACM Design Officer', info: '📍Portfolio Competition with 25+ submissions, Spring 2024'},
+    {img: college_highlight6, title: 'First In Person Designathon', info: '📍UCLA Vista Designathon, Spring 2024'},
+  ]
+
+  let projects = [
+    {name: 'Aura', description: 'A mobile app that helps users track their mental health and mood', image: project2, date: 'April 2024'},
+    {name: 'E-GO', description: 'A mobile app that helps users track their carbon footprint', image: project1, date: 'May 2024'},
+  ]
+
 </script>
 
 <main>
-  <!--TODO: The social logos are black so they dont show up properly-->
   <NavBar />
-  <div class="flex flex-col border-white border-4 ml-20 mr-20 mt-10 text-center rounded-md p-52" id="intro-container">
-    <h1 class="text-7xl mb-10"> Sama Ahmed</h1>
-    <h2 class="text-4xl mb-5">computer science student <br> @california state university, fullerton with a passion for UI/UX design</h2>
-    <h2 class="text-3xl">check out my resume <a href={resume} class="text-blue-500">here</a></h2>
+  <div class="flex flex-col border-white border-4 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-10 text-center rounded-md p-16 pl-10 pr-10 sm:p-24 md:p-32 lg:p-24 lg:pt-32 lg:pb-32 xl:p-52" id="intro-container">
+    <h1 class="text-3xl sm:text-4xl md:text-6xl xl:text-7xl mb-10"> Sama Ahmed</h1>
+    <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5">computer science student <br> @california state university, fullerton with a passion for UI/UX design</h2>
+    <h2 class="text-lg sm:text-xl md:text-2xl xl:text-3xl">check out my resume <a href={resume} class="text-blue-500">here</a></h2>
   </div>
 
 
-  <div class="flex flex-col ml-20 mr-20 mt-10">
+  <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24">
     <h1 class="text-4xl mb-5">College Highlights</h1>
-    <div class="flex flex-row space-x-5">
-
-      <div class="w-1/3 text-center">
-        <img src={college_highlight2} alt="college highlight 2" class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
-        <p>ACM CSUF Design Officer</p>
-        <p>📍First workshop of Spring 2024</p>
-      </div>   
-      <div class="w-1/3 text-center">
-        <img src={college_highlight4} alt="college highlight 4" class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
-        <p>ACM Design Officer</p>
-        <p>📍Portfolio Competition with 25+ submissions, Spring 2024</p>
-      </div>
-      
-      <div class="w-1/3 text-center">
-        <img src={college_highlight6} alt="college highlight 6" class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
-        <p>First In Person Designathon</p>
-        <p>📍UCLA Vista Designathon, Spring 2024</p>
-      </div>  
-    </div>
+    <div class="flex flex-col md:flex-row md:space-x-5">
+      {#each college_highlights as highlight}
+        <div class="w-full md:w-1/3 text-center">
+          <img src={highlight.img} alt={highlight.title} class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
+          <p>{highlight.title}</p>
+          <p>{highlight.info}</p>
+        </div>
+      {/each}
+    </div>  
   </div>
 
-  <div class="flex flex-col ml-20 mr-20 mt-24" id="projects">
-    <div>
-      <div class="flex flex-row justify-between">
-        <p class="text-3xl mb-2">Aura</p>
-        <p class="text-3xl mb-2">April 2024</p>
-      </div>
-      <img src={project2} id="project1" alt="project 2" class="rounded-md mb-20 w-full object-cover"/>
-    </div>
-
-    <div>
-      <div class="flex flex-row justify-between">
-        <p class="text-3xl mb-2">E-GO</p>
-        <p class="text-3xl mb-2">May 2024</p>
-      </div>
-      <img src={project1} id="project2" alt="project 1" class="rounded-md mb-20 w-full object-cover"/>
-    </div>
+  <div class="flex flex-col sm:ml-10 sm:mr-10 mt-24" id="projects">
+    <h1 class="text-4xl mb-5">Projects</h1>
+    {#each projects as project}
+      <div>
+        <div class="flex flex-row justify-between">
+          <h2 class="text-2xl mb-2">{project.name}</h2>
+          <!--<p class= "mb-2">- {project.description}</p>-->
+          <p class="text-3xl mb-2">{project.date}</p>
+        </div>
+        <img src={project.image} id="project1" alt="project 2" class="rounded-md mb-20 w-full object-cover"/>
+      </div> 
+    {/each}
   </div>
 
 </main>
@@ -72,11 +68,13 @@
   #intro-container {
     transition: 0.3s;
   }
+  
   #intro-container:hover {
     background-color: white;
     color: black;
   }
 
+  /* fix this */
   #project1, #project2 {
     transition: 0.3s;
   }
