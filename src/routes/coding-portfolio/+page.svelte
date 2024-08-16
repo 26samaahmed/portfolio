@@ -3,7 +3,7 @@
   import college_highlight1 from '$lib/assets/college_highlight1.jpg';
   import college_highlight5 from '$lib/assets/college_highlight5.jpg';
   import college_highlight3 from '$lib/assets/college_highlight3.jpg';
-  let resume = 'https://drive.google.com/file/resume.pdf';
+  import resume from '$lib/assets/resume.pdf';
 
   let projects =[
     {name: 'SkySong', link: 'https://github.com/26samaahmed/skysong', teck_stack: 'spotify api, openweather api, python, flask, html, css, spotipy', description: 'A website where the current temperature is displayed and songs of the hour are recommended for people to listen to. The lower the temperature, the calmer the music. If the temperature is high, then upbeat music will be recommended.'},
@@ -37,7 +37,7 @@
   ]
 
   let college_highlights = [
-    {img: college_highlight1, title: 'Open Source Software Team Member', info: '📍End of Semester Ceremony. Fall 2023'},
+    {img: college_highlight1, title: 'Open Source Software Team Member', info: '📍End of Semester Ceremony, Fall 2023'},
     {img: college_highlight5, title: 'ACM CSUF Design Officer', info: '📍End of Semester Meeting, Spring 2024'},
     {img: college_highlight3, title: 'FullyHacks Design Officer', info: '📍Hackathon with 400+ applicants, Spring 2024'},
   ]
@@ -49,7 +49,7 @@
   <div class="flex flex-col border-black border-4 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-10 text-center rounded-md p-16 pl-10 pr-10 sm:p-24 md:p-32 lg:p-24 lg:pt-32 lg:pb-32 xl:p-52" id="intro-container">
     <h1 class="text-3xl sm:text-4xl md:text-6xl xl:text-7xl mb-10"> Sama Ahmed</h1>
     <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5">computer science student <br> @california state university, fullerton</h2>
-    <h2 class="text-lg sm:text-xl md:text-2xl xl:text-3xl">check out my resume <a href={resume} class="text-blue-500">here</a></h2>
+    <h2 class="text-lg sm:text-xl md:text-2xl xl:text-3xl">check out my resume <a href={resume} target="_blank" class="text-blue-500">here</a></h2>
   </div>
 
   <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24">

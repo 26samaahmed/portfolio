@@ -8,14 +8,14 @@
   let resume = 'https://drive.google.com/file/resume.pdf';
 
   let college_highlights = [
-    {img: college_highlight2, title: 'ACM CSUF Design Officer', info: '📍First workshop of Spring 2024'},
+    {img: college_highlight2, title: 'ACM CSUF Design Officer', info: '📍First Design workshop, Spring 2024'},
     {img: college_highlight4, title: 'ACM Design Officer', info: '📍Portfolio Competition with 25+ submissions, Spring 2024'},
     {img: college_highlight6, title: 'First In Person Designathon', info: '📍UCLA Vista Designathon, Spring 2024'},
   ]
 
   let projects = [
-    {name: 'Aura', description: 'A mobile app that helps users track their mental health and mood', image: project2, date: 'April 2024'},
-    {name: 'E-GO', description: 'A mobile app that helps users track their carbon footprint', image: project1, date: 'May 2024'},
+    {name: 'Aura', description: 'A mobile app that is dedicated for deaf people to feel music in a different way through visuals made by people with color synthesia', image: project2, date: 'April 2024'},
+    {name: 'E-GO', description: 'A mobile app that helps people that need a ride without having to search on multiple platforms', image: project1, date: 'May 2024'},
   ]
 
 </script>
@@ -45,13 +45,15 @@
   <div class="flex flex-col sm:ml-10 sm:mr-10 mt-24" id="projects">
     <h1 class="text-4xl mb-5">Projects</h1>
     {#each projects as project}
-      <div>
+      <div class="relative group">
         <div class="flex flex-row justify-between">
           <h2 class="text-2xl mb-2">{project.name}</h2>
-          <!--<p class= "mb-2">- {project.description}</p>-->
-          <p class="text-3xl mb-2">{project.date}</p>
+          <p class="text-2xl mb-2">{project.date}</p>
         </div>
-        <img src={project.image} id="project1" alt="project 2" class="rounded-md mb-20 w-full object-cover"/>
+        <img src={project.image} alt="project 2" class="rounded-md mb-20 w-full object-cover" />
+        <p class="description text-xl m-5 text-white absolute inset-0 flex items-center justify-center opacity-0">
+          {project.description}
+        </p>
       </div> 
     {/each}
   </div>
@@ -74,12 +76,16 @@
     color: black;
   }
 
-  /* fix this */
-  #project1, #project2 {
-    transition: 0.3s;
+  .group img {
+    transition: 0.5s;
   }
-
-  #project1:hover, #project2:hover {
+  
+  .group:hover img {
     opacity: 0.2;
   }
+
+  .group:hover .description {
+    opacity: 1;
+  }
+  
 </style>
