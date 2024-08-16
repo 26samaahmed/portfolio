@@ -32,7 +32,7 @@
       {/each}
     </div>
 
-    <div class="flex justify-end space-x-8">
+    <div class="flex justify-end space-x-3 md:space-x-8">
       {#each buttons as button}
         {#if button.link === '#projects'}
           <a href={button.link} on:click|preventDefault={scrollIntoView} class="no-underline hover:underline text:lg sm:text-2xl">{button.name}</a>
