@@ -80,6 +80,7 @@
     {/each}
     <p class="text-lg text-black mb-5 text-end mr-4">Check out more on my <a class="underline " href="https://github.com/26samaahmed" target="_blank">github</a></p>
   </div>
+  <p class="text-center text-md md:text-xl text-black">Made with 💚 by Sama Ahmed</p>
 
   <!--
   <div class="flex flex-row ml-20 mr-20 mt-10 space-x-10">

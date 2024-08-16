@@ -59,7 +59,7 @@
       </div> 
     {/each}
   </div>
-
+  <p class="text-center text-md md:text-xl text-white">Made with 💚 by Sama Ahmed</p>
 </main>
 
 
