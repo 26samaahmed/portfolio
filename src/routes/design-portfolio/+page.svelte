@@ -13,18 +13,20 @@
   import college_highlight8 from '$lib/assets/college_highlight8.jpg';
   import project1 from '$lib/assets/design_project1.png';
   import project2 from '$lib/assets/design_project2.png';
+  import project3 from '$lib/assets/design_project3.png';
   let resume = 'https://drive.google.com/file/resume.pdf';
 
   let college_highlights = [
     {img: college_highlight2, title: 'ACM CSUF Design Officer', info: '📍First Design workshop, Spring 2024'},
     {img: college_highlight4, title: 'ACM CSUF Design Officer', info: '📍Portfolio Competition with 25+ submissions, Spring 2024'},
-    {img: college_highlight6, title: 'First In Person Designathon', info: '📍UCLA Vista Designathon, Spring 2024'},
+    {img: college_highlight6, title: 'First In Person Designathon', info: '📍UCLA Vista Designathon, Summer 2024'},
     {img: college_highlight8, title: 'FullyBeyond Web Dev Team Lead', info: '📍CSUF\'s first student-run designathon, Summer 2024'}
   ]
 
   let projects = [
-    {name: 'Aura', description: 'A mobile app that is dedicated for deaf people to feel music in a different way through visuals made by people with color synthesia', image: project2, date: 'April 2024'},
-    {name: 'E-GO', description: 'A mobile app that helps people that need a ride without having to search on multiple platforms', image: project1, date: 'May 2024'},
+    {name: 'Aura', description: 'A mobile app dedicated for deaf people to feel music in a different way through visuals made by people with color synthesia', image: project2, date: 'April 2024'},
+    {name: 'Fish Tank', description: 'A mobile app that allows for students in college to meet new friends by joining activities happening on campus', image: project3, date: 'April 2024'},
+    {name: 'E-GO', description: 'A mobile app that helps people that need a ride without having to search on multiple platforms', image: project1, date: 'May 2024'}
   ]
 
 </script>
