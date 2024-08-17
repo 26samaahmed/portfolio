@@ -6,7 +6,7 @@
 
 <head>
   <title>Sama Ahmed's Portfolio</title>
-  <meta name="description" content="sama ahmed's personal website">
+  <meta name="description" content="sama ahmed's personal website, 2024">
   <meta name="keywords" content="sama ahmed, computer science, cal state fullerton">
   <meta name="author" content="sama ahmed">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
 <main>
   <div class="flex flex-col md:flex-row h-screen">
     <div class="flex-1 bg-white h-full flex flex-col justify-center items-center">
-      <button class="text-xl sm:text-3xl absolute left-3 top-2 sm:rounded-3xl rounded-3xl border-4 text-black border-black p-4 pl-6 pr-6"><a href="mailto:ssama5336@gmail.com" target="_blank">Contact</a></button>
+      <button class="text-xl sm:text-2xl absolute left-3 top-2 sm:rounded-3xl rounded-3xl border-4 text-black border-black p-2 pl-5 pr-5"><a href="mailto:ssama5336@gmail.com" target="_blank">Contact</a></button>
       <h1 class="text-black text-2xl sm:text-4xl">Aspiring Software Engineer</h1>
       <div class="flex flex-row items-center space-x-3">
         <img src={black_arrow} alt="black arrow" class="w-5 h-5 mt-2" />

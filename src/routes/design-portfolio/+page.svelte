@@ -1,3 +1,10 @@
+<svelte:head>
+  <title>Sama's Design Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+</svelte:head>
+
 <script>
   import NavBar from '../../components/DesignNavBar.svelte';
   import college_highlight4 from '$lib/assets/college_highlight4.jpg';
@@ -67,6 +74,7 @@
   :global(body) {
     background-color: black;
     color: white;
+    font-family: "Goldman", sans-serif;
   }
 
   #intro-container {

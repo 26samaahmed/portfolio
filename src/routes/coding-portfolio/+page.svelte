@@ -1,3 +1,10 @@
+<svelte:head>
+  <title>Sama's Coding Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+</svelte:head>
+
 <script>
   import NavBar from '../../components/NavBar.svelte';
   import college_highlight1 from '$lib/assets/college_highlight1.jpg';
@@ -5,6 +12,7 @@
   import college_highlight5 from '$lib/assets/college_highlight5.jpg';
   import college_highlight7 from '$lib/assets/college_highlight7.jpg';
   import resume from '$lib/assets/resume.pdf';
+  
 
   let projects =[
     {name: 'SkySong', link: 'https://github.com/26samaahmed/skysong', teck_stack: 'spotify api, openweather api, python, flask, html, css, spotipy', description: 'A website where the current temperature is displayed and songs of the hour are recommended for people to listen to. The lower the temperature, the calmer the music. If the temperature is high, then upbeat music will be recommended.'},
@@ -110,6 +118,7 @@
 <style>
   :global(body) {
     background-color: white;
+    font-family: "Goldman", sans-serif;
   }
 
   #intro-container {
