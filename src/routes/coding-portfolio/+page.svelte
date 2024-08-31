@@ -11,7 +11,7 @@
   import college_highlight3 from '$lib/assets/college_highlight3.jpg';
   import college_highlight5 from '$lib/assets/college_highlight5.jpg';
   import college_highlight7 from '$lib/assets/college_highlight7.jpg';
-  import resume from '$lib/assets/resume.pdf';
+  import resume from '$lib/assets/Sama_Ahmed_2024_Resume.pdf';
   
 
   let projects =[

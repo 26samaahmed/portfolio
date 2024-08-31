@@ -14,7 +14,7 @@
   import project1 from '$lib/assets/design_project1.png';
   import project2 from '$lib/assets/design_project2.png';
   import project3 from '$lib/assets/design_project3.png';
-  let resume = 'https://drive.google.com/file/resume.pdf';
+  import resume from '$lib/assets/Sama_Ahmed_Design_2024_Resume.pdf';
 
   let college_highlights = [
     {img: college_highlight2, title: 'ACM CSUF Design Officer', info: '📍First Design workshop, Spring 2024'},
