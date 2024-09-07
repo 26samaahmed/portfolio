@@ -21,30 +21,6 @@
     {name: 'acmcsuf.com', link: 'https://github.com/26samaahmed/acmcsuf.com', teck_stack: 'sveltekit, typescript', description: 'A website for the Association for Computing Machinery at California State University, Fullerton with 50+ contributers that shows information about the club, events, and resources. As the webmaster, I am responsible for maintaining the website and updating it with new information.'},
   ]
 
-  let top_songs = [
-    {i: 1, name: 'Hush-Hush', artist: 'Ateez, BE:FIRST', link: 'https://open.spotify.com/track/27JQxefJsCVa6xTbEFBVXG?si=25d0c5faf35946b6', img: 'placeholder'},
-    {i: 2, name: "Honestly", artist: 'RIIZE', link: 'https://open.spotify.com/track/39WIXqHwC7mAkoM57ZqGkp?si=aa34361488264b44', img: 'placeholder'},
-    {i: 3, name: 'Chk Chk Boom', artist: 'Stray Kids', link: 'https://open.spotify.com/track/09keT5ocFhEd5W5HidiUNq?si=b8ac8a39b20c42cc', img: 'placeholder'},
-    {i: 4, name: "Impossible", artist: 'RIIZE', link: 'https://open.spotify.com/track/1JTmrZwZhaP1yYJtuzfvJ9?si=24ee3553016f4f61', img: 'placeholder'},
-    {i: 5, name: 'This World', artist: 'Ateez', link: 'https://open.spotify.com/track/6QDcmN2Avrim8kNoCHkw9s?si=6e0061541fde40e3', img: 'placeholder'},
-    {i: 6, name: 'MoonStruck', artist: 'Enhypen', link: 'https://open.spotify.com/track/3gYWGRS64XrGSrjD3vvtga?si=e443b7116d8d4cb9', img: 'placeholder'},
-    {i: 7, name: '唱', artist: 'Ado', link: 'https://open.spotify.com/track/7o0TPSw494RG2Q4iWmd1v6?si=dcde6d7604464a37', img: 'placeholder'},
-    {i: 8, name: 'Woke Up', artist: 'XG', link: 'https://open.spotify.com/track/4keuUM29CtIWgsPRzRhXoW?si=f39917ddc5894854', img: 'placeholder'},
-    {i: 9, name: 'Halazia', artist: 'Ateez', link: 'https://open.spotify.com/track/5cTnKClHyczcUhFT8MKBZe?si=126f2c7b3d00420e', img: 'placeholder'},
-    {i: 10, name: 'Slash', artist: 'Stray Kids', link: 'https://open.spotify.com/track/2MKGrYH1PyPAUKu2Sl8IaT?si=5cc880ba2fc84cb2', img: 'placeholder'},
-  ]
-
-  let top_books = [
-    {i: 1, name: 'We are not free', author: 'Traci Chee', link: 'https://www.goodreads.com/book/show/49934666-we-are-not-free'},
-    {i: 2, name: 'Legend', author: 'Marie Lu', link: 'https://www.goodreads.com/book/show/29863662-legend'},
-    {i: 3, name: 'Prodigy', author: 'Marie Lu', link: 'https://www.goodreads.com/book/show/13414446-prodigy'},
-    {i: 4, name: 'Champion', author: 'Marie Lu', link: 'https://www.goodreads.com/book/show/18291576-champion'},
-    {i: 5, name: 'Alone with you in the ether', author: 'Olivie Blake', link: 'https://www.goodreads.com/book/show/61126612-alone-with-you-in-the-ether'},
-    {i: 6, name: 'Girl in pieces', author: 'Kathleen Glasgow', link: 'https://www.goodreads.com/book/show/29236380-girl-in-pieces'},
-    {i: 7, name: 'Normal People', author: 'Sally Rooney', link: 'https://www.goodreads.com/book/show/41057294-normal-people'},
-    {i: 8, name: 'Today Tonight Tomorrow', author: 'Rachel Lynn Solomon', link: 'https://www.goodreads.com/book/show/52766407-today-tonight-tomorrow'},
-  ]
-
   let college_highlights = [
     {img: college_highlight1, title: 'Open Source Software Team Member', info: '📍End of Semester Ceremony, Fall 2023'},
     {img: college_highlight5, title: 'ACM CSUF Design Officer', info: '📍End of Semester Meeting, Spring 2024'},
@@ -56,17 +32,28 @@
 
 <main>
   <NavBar />
-  <div class="flex flex-col border-black border-4 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-10 text-center rounded-md p-16 pl-10 pr-10 sm:p-24 md:p-32 lg:p-24 lg:pt-32 lg:pb-32 xl:p-52" id="intro-container">
+  <div class="flex flex-col border-black border-4 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-10 text-center rounded-md p-16 pl-10 pr-10 sm:p-24 md:p-24 lg:p-24 lg:pt-28 lg:pb-28 xl:p-52" id="intro-container">
     <h1 class="text-3xl sm:text-4xl md:text-6xl xl:text-7xl mb-10"> Sama Ahmed</h1>
     <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5">computer science student <br> @california state university, fullerton</h2>
-    <h2 class="text-lg sm:text-xl md:text-2xl xl:text-3xl">check out my resume <a href={resume} target="_blank" class="text-blue-500">here</a></h2>
+    <h2 class="text-lg sm:text-xl md:text-2xl xl:text-3xl mb-6">check out my resume <a href={resume} target="_blank" class="text-blue-500">here</a></h2>
+    <iframe 
+    style="border-radius:12px" 
+    src="https://open.spotify.com/embed/track/52dF752HWIsv2CpSuTX3p2?utm_source=generator" 
+    width="100%" 
+    height="100"
+    frameBorder="0" 
+    allowfullscreen 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy" 
+    title="Spotify Song Player">
+  </iframe>
   </div>
 
   <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24">
     <h1 class="text-3xl sm:text-4xl mb-5">College Highlights</h1>
     <div class="flex flex-wrap">
       {#each college_highlights as highlight}
-        <div class="w-full sm:w-1/2 p-2 mb-12 md:mb-q0 text-center">
+        <div class="w-full sm:w-1/2 p-2 mb-12 md:mb-0 text-center">
           <img src={highlight.img} alt={highlight.title} class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
           <p>{highlight.title}</p>
           <p>{highlight.info}</p>

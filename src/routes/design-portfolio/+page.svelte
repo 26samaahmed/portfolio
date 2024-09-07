@@ -33,10 +33,18 @@
 
 <main>
   <NavBar />
-  <div class="flex flex-col border-white border-4 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-10 text-center rounded-md p-16 pl-10 pr-10 sm:p-24 md:p-32 lg:p-24 lg:pt-32 lg:pb-32 xl:p-52" id="intro-container">
+  <div class="flex flex-col border-white border-4 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-10 text-center rounded-md p-16 pl-10 pr-10 sm:p-24 md:p-24 lg:p-24 lg:pt-28 lg:pb-28 xl:p-52" id="intro-container">
     <h1 class="text-3xl sm:text-4xl md:text-6xl xl:text-7xl mb-10"> Sama Ahmed</h1>
     <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5">computer science student <br> @california state university, fullerton with a passion for UI/UX design</h2>
-    <h2 class="text-lg sm:text-xl md:text-2xl xl:text-3xl">check out my resume <a href={resume} class="text-blue-500">here</a></h2>
+    <h2 class="text-lg sm:text-xl md:text-2xl xl:text-3xl mb-5">check out my resume <a href={resume} class="text-blue-500">here</a></h2>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0Xt3OOV9aA5g54iUYtaP9z?utm_source=generator"     
+    width="100%" 
+    height="100"
+    frameBorder="0" 
+    allowfullscreen 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy" 
+    title="Spotify Song Player">
   </div>
 
 
