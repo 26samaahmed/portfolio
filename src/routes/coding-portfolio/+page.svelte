@@ -36,17 +36,6 @@
     <h1 class="text-3xl sm:text-4xl md:text-6xl xl:text-7xl mb-10"> Sama Ahmed</h1>
     <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5">computer science student <br> @california state university, fullerton</h2>
     <h2 class="text-lg sm:text-xl md:text-2xl xl:text-3xl mb-6">check out my resume <a href={resume} target="_blank" class="text-blue-500">here</a></h2>
-    <iframe 
-    style="border-radius:12px" 
-    src="https://open.spotify.com/embed/track/52dF752HWIsv2CpSuTX3p2?utm_source=generator" 
-    width="100%" 
-    height="100"
-    frameBorder="0" 
-    allowfullscreen 
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-    loading="lazy" 
-    title="Spotify Song Player">
-  </iframe>
   </div>
 
   <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24">
@@ -75,31 +64,21 @@
     {/each}
     <p class="text-lg text-black mb-5 text-end mr-4">Check out more on my <a class="underline " href="https://github.com/26samaahmed" target="_blank">github</a></p>
   </div>
-  <p class="text-center text-md md:text-xl text-black">Made with 💚 by Sama Ahmed</p>
-
-  <!--
-  <div class="flex flex-row ml-20 mr-20 mt-10 space-x-10">
-    <div class="flex-1">
-      <div class="bg-[#C7D8FF] p-10 rounded-md">
-        <h1 class="text-2xl text-black mb-5">Top songs this month:</h1>
-        {#each top_songs as song}
-          <p class="text-md text-black">{song.i}. <a href={song.link} class='underline font-bold'>{song.name}</a> by {song.artist}</p>
-        {/each}
-      </div>
-    </div>
-
-    <div class="flex-1">
-      <div class="bg-[#B8EBFF] p-10 rounded-md">
-        <h1 class="text-2xl text-black mb-5">Top books:</h1>
-        {#each top_books as book}
-          <p class="text-md text-black">{book.i}. <a href={book.link} class='underline font-bold'>{book.name}</a> by {book.author}</p>
-        {/each}
-
-        <p class="text-lg text-black mt-5">Current Read: <a class="underline font-bold" href="https://www.goodreads.com/book/show/28421168-renegades" target="_blank">Renegades</a> by Marissa Meyer</p>
-      </div>
-    </div>
+  <div class="text-center mt-10 m-5">
+    <p class="text-md mb-2">Thank you for making it this far! Here is a song recommendation for you:</p>
+    <iframe 
+      style="border-radius:12px; display:block; margin:auto;" 
+      class="w-full sm:w-96"
+      src="https://open.spotify.com/embed/track/52dF752HWIsv2CpSuTX3p2?utm_source=generator" 
+      height="100"
+      frameBorder="0" 
+      allowfullscreen 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      loading="lazy" 
+      title="Spotify Song Player">
+    </iframe>
   </div>
-  -->
+  <p class="text-center mt-5 text-md md:text-xl text-black">Made with 💚 by Sama Ahmed</p>
 </main>
 
 <style>
