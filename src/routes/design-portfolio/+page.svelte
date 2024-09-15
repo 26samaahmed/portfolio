@@ -14,6 +14,7 @@
   import project1 from '$lib/assets/design_project1.png';
   import project2 from '$lib/assets/design_project2.png';
   import project3 from '$lib/assets/design_project3.png';
+  import project4 from '$lib/assets/design_project4.png';
   import resume from '$lib/assets/Sama_Ahmed_Design_2024_Resume.pdf';
 
   let college_highlights = [
@@ -24,6 +25,7 @@
   ]
 
   let projects = [
+    {name: 'Fullyhacks', description: 'A website for the biggest hackathon in CSUF, attracting 400+ applicants and 10 sponsors', image: project4, date: 'February 2024'},
     {name: 'Aura', description: 'A mobile app dedicated for deaf people to feel music in a different way through visuals made by people with color synthesia', image: project2, date: 'April 2024'},
     {name: 'Fish Tank', description: 'A mobile app that allows for students in college to meet new friends by joining activities happening on campus', image: project3, date: 'April 2024'},
     {name: 'E-GO', description: 'A mobile app that helps people that need a ride without having to search on multiple platforms', image: project1, date: 'May 2024'}
@@ -53,7 +55,7 @@
   </div>
 
   <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10  mt-24" id="projects">
-    <h1 class="text-4xl mb-5">Projects</h1>
+    <h1 class="text-4xl mb-5">Projects <span class="text-sm">(all designed using Figma)</span></h1>
     {#each projects as project}
       <div class="relative group">
         <div class="flex flex-row justify-between">
