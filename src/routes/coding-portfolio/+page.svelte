@@ -11,6 +11,7 @@
   import college_highlight3 from '$lib/assets/college_highlight3.jpg';
   import college_highlight5 from '$lib/assets/college_highlight5.jpg';
   import college_highlight7 from '$lib/assets/college_highlight7.jpg';
+  import college_highlight9 from '$lib/assets/college_highlight9.jpg';
   import resume from '$lib/assets/Sama_Ahmed_2024_Resume.pdf';
   
 
@@ -25,7 +26,7 @@
     {img: college_highlight1, title: 'Open Source Software Team Member', info: '📍End of Semester Ceremony, Fall 2023'},
     {img: college_highlight5, title: 'ACM CSUF Design Officer', info: '📍End of Semester Meeting, Spring 2024'},
     {img: college_highlight3, title: 'FullyHacks Design Officer', info: '📍Hackathon with 400+ applicants, Spring 2024'},
-    {img: college_highlight7, title: 'Fullyhacks Design Officer', info: '📍Behind the scenes before the event started, Spring 2024'}
+    {img: college_highlight9, title: 'Open Source Software Co-Team Lead/Webmaster', info: '📍First Contributions Workshop, Fall 2024'},
   ]
 
 </script>
@@ -42,7 +43,7 @@
     <h1 class="text-3xl sm:text-4xl mb-5">College Highlights</h1>
     <div class="flex flex-wrap">
       {#each college_highlights as highlight}
-        <div class="w-full sm:w-1/2 p-2 mb-12 md:mb-0 text-center">
+        <div class="w-full sm:w-1/2 p-2 mb-12 text-center">
           <img src={highlight.img} alt={highlight.title} class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
           <p>{highlight.title}</p>
           <p>{highlight.info}</p>

@@ -45,7 +45,7 @@
     <h1 class="text-3xl sm:text-4xl mb-5">College Highlights</h1>
     <div class="flex flex-wrap">
       {#each college_highlights as highlight}
-        <div class="w-full sm:w-1/2 p-2 mb-12 md:mb-q0 text-center">
+        <div class="w-full sm:w-1/2 p-2 mb-12  text-center">
           <img src={highlight.img} alt={highlight.title} class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
           <p>{highlight.title}</p>
           <p>{highlight.info}</p>
