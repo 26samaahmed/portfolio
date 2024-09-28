@@ -38,7 +38,7 @@
   
   <!-- Footer -->
   <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full flex justify-center">
-    <p class="text-center text-md md:text-2xl text-white md:text-black">Made with 💚 b<span class="md:text-white">y Sama Ahmed</span></p>
+    <p class="text-center text-md md:text-lg text-white md:text-black">Made with 💚 b<span class="md:text-white">y Sama Ahmed</span></p>
   </div>
   
   

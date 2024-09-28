@@ -83,7 +83,7 @@
       title="Spotify Song Player">
     </iframe>
   </div>
-  <p class="text-center mt-5 text-md md:text-xl text-white">Made with 💚 by Sama Ahmed</p>
+  <p class="text-center mt-5 text-md md:text-lg text-white">Made with 💚 by Sama Ahmed</p>
 </main>
 
 
