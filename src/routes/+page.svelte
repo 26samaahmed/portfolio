@@ -17,9 +17,13 @@
     <div class="flex-1 bg-white h-full flex flex-col justify-center items-center">
       <button class="text-xl sm:text-2xl absolute left-3 top-2 sm:rounded-3xl rounded-3xl border-4 text-black border-black p-2 pl-5 pr-5"><a href="mailto:ssama5336@gmail.com" target="_blank">Contact</a></button>
       <h1 class="text-black text-2xl sm:text-4xl">Aspiring Software Engineer</h1>
-      <div class="flex flex-row items-center space-x-3">
-        <img src={black_arrow} alt="black arrow" class="w-5 h-5 mt-2" />
-        <h3 class="text-black text-md sm:text-2xl mt-2">
+
+      <div class="flex flex-row items-center space-x-3 mt-3">
+        <svg class="w-6 h-6 sm:w-8 sm:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="6" y1="12" x2="22" y2="12" stroke="black" stroke-width="2"/>
+          <polyline points="12,6 6,12 12,18" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>        
+        <h3 class="text-black text-md sm:text-2xl">
           <a href='/coding-portfolio' class="no-underline hover:underline">View Coding Portfolio</a>
         </h3>
       </div>
@@ -27,12 +31,16 @@
   
     <div class="flex-1 bg-black h-full flex flex-col justify-center items-center">
       <h1 class="text-white text-2xl sm:text-4xl">Aspiring Designer</h1>
-      <div class="flex flex-row items-center space-x-3">
-        <h3 class="text-white text-md sm:text-2xl mt-2">
+
+      <div class="flex flex-row items-center space-x-3 mt-3">
+        <h3 class="text-white text-md sm:text-2xl">
           <a href='/design-portfolio' class="no-underline hover:underline">View Design Portfolio</a>
         </h3>
-        <img src={white_arrow} alt="white arrow" class="w-5 h-5 mt-2" />
-      </div>
+        <svg class="w-6 h-6 sm:w-8 sm:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="2" y1="12" x2="18" y2="12" stroke="white" stroke-width="2"/>
+          <polyline points="12,6 18,12 12,18" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>      
     </div>
   </div>
   
