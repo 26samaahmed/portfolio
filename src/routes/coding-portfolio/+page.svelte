@@ -2,7 +2,7 @@
   <title>Sama's Coding Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
 </svelte:head>
 
 <script>
@@ -11,7 +11,8 @@
   import college_highlight3 from '$lib/assets/college_highlight3.jpg';
   import college_highlight5 from '$lib/assets/college_highlight5.jpg';
   import college_highlight9 from '$lib/assets/college_highlight9.jpg';
-  import resume from '$lib/assets/Sama_Ahmed_2024_Resume.pdf';
+  import college_highlight11 from '$lib/assets/college_highlight11.jpg';
+  import college_highlight12 from '$lib/assets/college_highlight12.jpg';
 
   let project_type = false; // false = personal project, true = group project
 
@@ -24,29 +25,32 @@
   ]
 
   let college_highlights = [
-    {img: college_highlight1, title: 'Open Source Software Team Member', info: '📍End of Semester Ceremony, Fall 2023'},
-    {img: college_highlight5, title: 'ACM CSUF Design Officer', info: '📍End of Semester Meeting, Spring 2024'},
-    {img: college_highlight3, title: 'FullyHacks Design Officer', info: '📍Hackathon with 400+ applicants, Spring 2024'},
-    {img: college_highlight9, title: 'Open Source Software Co-Team Lead/Webmaster', info: '📍First Contributions Workshop, Fall 2024'},
+    {img: college_highlight1,  title: 'Open Source Software Team Member'},
+    {img: college_highlight3, title: 'FullyHacks Design Officer'},
+    {img: college_highlight5, title: 'ACM CSUF Design Officer'},
+    {img: college_highlight9, title: 'Open Source Software Co-Team Lead/Webmaster'},
+    {img: college_highlight11, title: '??'},
+    {img: college_highlight12, title: '??'},
   ]
 </script>
 
 <main>
   <NavBar />
-  <div class="flex flex-col border-black border-4 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-10 text-center rounded-md p-16 pl-10 pr-10 sm:p-24 md:p-24 lg:p-24 lg:pt-28 lg:pb-28 xl:p-52" id="intro-container">
-    <h1 class="text-3xl sm:text-4xl md:text-6xl xl:text-7xl mb-10"> Sama Ahmed</h1>
-    <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5">computer science student <br> @california state university, fullerton</h2>
-    <h2 class="text-lg sm:text-xl md:text-2xl xl:text-3xl mb-6">check out my resume <a href={resume} target="_blank" class="text-blue-500">here</a></h2>
+  <div class="flex flex-col rounded-md mr-5 ml-5 sm:ml-10 sm:mr-10 sm:pt-28 md:pb-28" id="intro-container">
+    <div class="flex flex-col sm:flex-row justify-center items-center w-full mb-8 pt-16 text-center">
+      <h1 class="text-2xl sm:text-3xl md:text-5xl xl:text-5xl sm:mr-4 mb-4 sm:mb-0">I'm Sama Ahmed</h1>
+      <div class="hidden sm:block w-[2px] h-16 bg-gray-500"></div>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-5xl sm:ml-4">أنا سما أحمد</h1>
+    </div>
+    <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5 text-center">a passionate computer science student @csuf who loves solving problems with code and enjoys taking on leadership roles to help projects and teams succeed </h2>
   </div>
 
   <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24">
     <h1 class="text-3xl sm:text-4xl mb-5">College Highlights</h1>
-    <div class="flex flex-wrap">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
       {#each college_highlights as highlight}
-        <div class="w-full sm:w-1/2 p-2 mb-12 text-center">
-          <img src={highlight.img} alt={highlight.title} class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
-          <p>{highlight.title}</p>
-          <p>{highlight.info}</p>
+        <div class="flex flex-col items-center">
+          <img src={highlight.img} alt={highlight.title} class="rounded-md mb-2 h-full w-full object-cover" />
         </div>
       {/each}
     </div>
@@ -93,7 +97,7 @@
 <style>
   :global(body) {
     background-color: white;
-    font-family: "Goldman", sans-serif;
+    font-family: "Baskervville SC", serif;
   }
 
   #intro-container {

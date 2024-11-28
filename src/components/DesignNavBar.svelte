@@ -2,7 +2,8 @@
   let buttons = [
     {name: 'Home', link: '/'},
     {name: 'Projects', link: '#projects'},
-    {name: 'Gallery', link: 'https://design-record.vercel.app/'}
+    {name: 'Gallery', link: 'https://design-record.vercel.app/'},
+    {name: 'Resume', link: '/Sama_Ahmed_Design_2024_Resume.pdf'}
   ]
 
   function scrollIntoView({ target }) {
@@ -16,7 +17,7 @@
 </script>
 
 <main>
-  <nav class="flex ml-5 mr-5 sm:ml-10 sm:mr-10 mt-7 items-center">
+  <nav class="flex mr-5 ml-5 sm:ml-10 sm:mr-10 mt-7 items-center">
     <div class="flex-1 justify-start space-x-3 sm:space-x-8">
       <a href="https://www.linkedin.com/in/sama-ahmedd/" target="_blank" rel="noopener noreferrer" class="no-underline hover:underline text-2xl">
         <svg class="w-7 h-7 sm:w-10 sm:h-10 inline-block" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">

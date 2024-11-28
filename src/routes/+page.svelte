@@ -1,21 +1,24 @@
+<svelte:head>
+  <title>Sama Ahmed's Portfolio</title>
+  <meta name="description" content="sama ahmed's personal website, 2024">
+  <meta name="keywords" content="sama ahmed, computer science, cal state fullerton">
+  <meta name="author" content="sama ahmed">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+</svelte:head>
+
 <script>
   import white_arrow from '$lib/assets/white_arrow.png';
   import black_arrow from '$lib/assets/black_arrow.png';
   let email = 'ssama5336@gmail.com';
 </script>
 
-<head>
-  <title>Sama Ahmed's Portfolio</title>
-  <meta name="description" content="sama ahmed's personal website, 2024">
-  <meta name="keywords" content="sama ahmed, computer science, cal state fullerton">
-  <meta name="author" content="sama ahmed">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
 <main>
   <div class="flex flex-col md:flex-row h-screen">
     <div class="flex-1 bg-white h-full flex flex-col justify-center items-center">
-      <button class="text-xl sm:text-2xl absolute left-3 top-2 sm:rounded-3xl rounded-3xl border-4 text-black border-black p-2 pl-5 pr-5"><a href="mailto:ssama5336@gmail.com" target="_blank">Contact</a></button>
+      <button class="text-xl sm:text-2xl absolute left-3 top-2 sm:rounded-3xl rounded-3xl border-2 text-black border-black p-2 pl-5 pr-5"><a href="mailto:ssama5336@gmail.com" target="_blank">Contact</a></button>
       <h1 class="text-black text-2xl sm:text-4xl">Aspiring Software Engineer</h1>
 
       <div class="flex flex-row items-center space-x-3 mt-3">
@@ -54,7 +57,7 @@
 
 <style>
   :global(body) {
-    font-family: "Goldman", sans-serif;
+    font-family: "Baskervville SC", serif;
   }
 
   button {

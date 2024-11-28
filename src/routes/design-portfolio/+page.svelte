@@ -2,7 +2,7 @@
   <title>Sama's Design Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
 </svelte:head>
 
 <script>
@@ -15,7 +15,6 @@
   import project2 from '$lib/assets/design_project2.png';
   import project3 from '$lib/assets/design_project3.png';
   import project4 from '$lib/assets/design_project4.png';
-  import resume from '$lib/assets/Sama_Ahmed_Design_2024_Resume.pdf';
 
   let college_highlights = [
     {img: college_highlight2, title: 'ACM CSUF Design Officer', info: '📍First Design workshop, Spring 2024'},
@@ -35,10 +34,13 @@
 
 <main>
   <NavBar />
-  <div class="flex flex-col border-white border-4 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-10 text-center rounded-md p-16 pl-10 pr-10 sm:p-24 md:p-24 lg:p-24 lg:pt-28 lg:pb-28 xl:p-52" id="intro-container">
-    <h1 class="text-3xl sm:text-4xl md:text-6xl xl:text-7xl mb-10"> Sama Ahmed</h1>
-    <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5">computer science student <br> @california state university, fullerton with a passion for ui/ux design</h2>
-    <h2 class="text-lg sm:text-xl md:text-2xl xl:text-3xl mb-5">check out my resume <a href={resume} class="text-blue-500">here</a></h2>
+  <div class="flex flex-col rounded-md mr-5 ml-5 sm:ml-10 sm:mr-10 sm:pt-28 md:pb-28" id="intro-container">
+    <div class="flex flex-col sm:flex-row justify-center items-center w-full mb-8 pt-16 text-center">
+      <h1 class="text-2xl sm:text-3xl md:text-5xl xl:text-5xl sm:mr-4 mb-4 sm:mb-0">I'm Sama Ahmed</h1>
+      <div class="hidden sm:block w-[2px] h-16 bg-gray-500"></div>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl sm:ml-4">أنا سما أحمد</h1>
+    </div>
+    <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5 text-center">a passionate computer science student @csuf with a deep interest in ui/ux design, , driven by creating user-centered experiences and eager to bring ideas to life.</h2>
   </div>
 
   <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24">
@@ -91,7 +93,7 @@
   :global(body) {
     background-color: black;
     color: white;
-    font-family: "Goldman", sans-serif;
+    font-family: "Baskervville SC", serif;
   }
 
   #intro-container {
