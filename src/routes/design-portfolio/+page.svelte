@@ -9,7 +9,7 @@
   import NavBar from '../../components/DesignNavBar.svelte';
   import college_highlight4 from '$lib/assets/college_highlight4.jpg';
   import college_highlight2 from '$lib/assets/college_highlight2.jpg';
-  import college_highlight6 from '$lib/assets/college_highlight6.jpg';
+  import college_highlight13 from '$lib/assets/college_highlight13.jpg';
   import college_highlight8 from '$lib/assets/college_highlight8.jpg';
   import project1 from '$lib/assets/design_project1.png';
   import project2 from '$lib/assets/design_project2.png';
@@ -17,16 +17,16 @@
   import project4 from '$lib/assets/design_project4.png';
 
   let college_highlights = [
-    {img: college_highlight2, title: 'ACM CSUF Design Officer', info: '📍First Design workshop, Spring 2024'},
-    {img: college_highlight4, title: 'ACM CSUF Design Officer', info: '📍Portfolio Competition with 25+ submissions, Spring 2024'},
-    {img: college_highlight6, title: 'First In Person Designathon', info: '📍UCLA Vista Designathon, Summer 2024'},
-    {img: college_highlight8, title: 'FullyBeyond Web Dev Team Lead', info: '📍CSUF\'s first student-run designathon, Summer 2024'}
+    {img: college_highlight2, title: 'First Design workshop', info: '📍First Design workshop, Spring 2024'},
+    {img: college_highlight4, title: 'Portfolio Competition with 25+ submissions', info: '📍Portfolio Competition with 25+ submissions, Spring 2024'},
+    {img: college_highlight8, title: 'CSUF\'s first student-run designathon', info: '📍Csuf\'s first student-run designathon, Summer 2024'},
+    {img: college_highlight13, title: 'Designathon 101 Workshop', info: '📍Designathon 101 Workshop, Fall 2024'},
   ]
 
   let projects = [
     {name: 'Fullyhacks', description: 'A website for the biggest hackathon in CSUF, attracting 400+ applicants and 10 sponsors', image: project4, date: 'February 2024'},
     {name: 'Aura', description: 'A mobile app dedicated for deaf people to feel music in a different way through visuals made by people with color synthesia', image: project2, date: 'April 2024'},
-    {name: 'Fish Tank', description: 'A mobile app that allows for students in college to meet new friends by joining activities happening on campus', image: project3, date: 'April 2024'},
+    {name: 'FishTank', description: 'A mobile app that allows for students in college to meet new friends by joining activities happening on campus', image: project3, date: 'April 2024'},
     {name: 'E-GO', description: 'A mobile app that helps people that need a ride without having to search on multiple platforms', image: project1, date: 'May 2024'}
   ]
 
@@ -35,12 +35,12 @@
 <main>
   <NavBar />
   <div class="flex flex-col rounded-md mr-5 ml-5 sm:ml-10 sm:mr-10 sm:pt-28 md:pb-28" id="intro-container">
-    <div class="flex flex-col sm:flex-row justify-center items-center w-full mb-8 pt-16 text-center">
+    <div class="flex flex-col sm:flex-row justify-start items-start w-full mb-8 pt-16 text-left">
       <h1 class="text-2xl sm:text-3xl md:text-5xl xl:text-5xl sm:mr-4 mb-4 sm:mb-0">I'm Sama Ahmed</h1>
       <div class="hidden sm:block w-[2px] h-16 bg-gray-500"></div>
-      <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl sm:ml-4">أنا سما أحمد</h1>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-5xl sm:ml-4">أنا سما أحمد</h1>
     </div>
-    <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5 text-center">a passionate computer science student @csuf with a deep interest in ui/ux design, , driven by creating user-centered experiences and eager to bring ideas to life.</h2>
+    <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5 text-left">a passionate computer science student @csuf with a deep interest in ui/ux design, driven by creating user-centered experiences and eager to bring ideas to life.</h2>
   </div>
 
   <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24">
@@ -49,8 +49,7 @@
       {#each college_highlights as highlight}
         <div class="w-full sm:w-1/2 p-2 mb-12  text-center">
           <img src={highlight.img} alt={highlight.title} class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"/>
-          <p>{highlight.title}</p>
-          <p>{highlight.info}</p>
+          <p class="text-md sm:text-lg">{highlight.info}</p>
         </div>
       {/each}
     </div>
@@ -94,15 +93,6 @@
     background-color: black;
     color: white;
     font-family: "Baskervville SC", serif;
-  }
-
-  #intro-container {
-    transition: 0.3s;
-  }
-  
-  #intro-container:hover {
-    background-color: white;
-    color: black;
   }
 
   .group img {

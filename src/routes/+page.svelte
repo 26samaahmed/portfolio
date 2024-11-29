@@ -10,8 +10,6 @@
 </svelte:head>
 
 <script>
-  import white_arrow from '$lib/assets/white_arrow.png';
-  import black_arrow from '$lib/assets/black_arrow.png';
   let email = 'ssama5336@gmail.com';
 </script>
 
@@ -26,7 +24,7 @@
           <line x1="6" y1="12" x2="22" y2="12" stroke="black" stroke-width="2"/>
           <polyline points="12,6 6,12 12,18" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>        
-        <h3 class="text-black text-md sm:text-2xl">
+        <h3 class="text-black text-md sm:text-xl">
           <a href='/coding-portfolio' class="no-underline hover:underline">View Coding Portfolio</a>
         </h3>
       </div>
@@ -36,7 +34,7 @@
       <h1 class="text-white text-2xl sm:text-4xl">Aspiring Designer</h1>
 
       <div class="flex flex-row items-center space-x-3 mt-3">
-        <h3 class="text-white text-md sm:text-2xl">
+        <h3 class="text-white text-md sm:text-xl">
           <a href='/design-portfolio' class="no-underline hover:underline">View Design Portfolio</a>
         </h3>
         <svg class="w-6 h-6 sm:w-8 sm:h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
