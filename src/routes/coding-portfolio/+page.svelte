@@ -23,7 +23,7 @@
   ]
 
   let college_highlights = [
-    {img: college_highlight12, title: '??', info: '📍Pre-Fullyhacks Prepeartion, Spring 2024'},
+    {img: college_highlight12, title: 'OSS Commencement', info: '📍OSS Commencement, Fall 2024'},
     {img: college_highlight3, title: 'FullyHacks Design Officer', info: '📍Fullyhacks Day, Spring 2024'},
     {img: college_highlight5, title: 'ACM CSUF Design Officer', info: '📍Last ACM General Meeting, Spring 2024'},
     {img: college_highlight9, title: 'Open Source Software Co-Team Lead/Webmaster', info: '📍First Contibutions oss worskhop, Fall 2024'}
