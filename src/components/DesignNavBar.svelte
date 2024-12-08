@@ -36,9 +36,9 @@
     <div class="flex justify-end space-x-3 md:space-x-8">
       {#each buttons as button}
         {#if button.link === '#projects'}
-          <a href={button.link} on:click|preventDefault={scrollIntoView} class="no-underline hover:underline text:lg sm:text-2xl">{button.name}</a>
+          <a href={button.link} on:click|preventDefault={scrollIntoView} class="no-underline hover:underline transition-all duration-300 ease-in-out text:lg sm:text-2xl">{button.name}</a>
         {:else}
-          <a href={button.link} class="no-underline hover:underline text:lg sm:text-2xl">{button.name}</a>
+          <a href={button.link} class="no-underline hover:underline transition-all duration-300 ease-in-out text:lg sm:text-2xl">{button.name}</a>
         {/if}
       {/each}
     </div>
