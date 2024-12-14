@@ -120,11 +120,11 @@
     class="grid grid-cols-1 sm:grid-cols-2 gap-12 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24"
     id="projects"
   >
-    <h1 class="col-span-1 sm:col-span-2 text-4xl mb-5">
+    <h1 class="col-span-1 sm:col-span-2 text-4xl">
       Projects <span class="text-sm">(all designed using Figma)</span>
     </h1>
     {#each projects as project}
-      <div class="relative group mb-10">
+      <div class="relative group mb-8">
         <div class="flex flex-row justify-between">
           <h2 class="text-lg sm:text-2xl mb-2">{project.name}</h2>
           <p class="text-lg sm:text-2xl mb-2">{project.date}</p>
