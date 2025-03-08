@@ -1,3 +1,13 @@
+<svelte:head>
+  <title>sama's coding portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap"
+    rel="stylesheet"
+  />
+</svelte:head>
+
 <script>
   import NavBar from "../../components/NavBar.svelte";
   import college_highlight3 from "$lib/assets/college_highlight3.jpg";
@@ -76,20 +86,10 @@
   ];
 </script>
 
-<svelte:head>
-  <title>Sama's Coding Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap"
-    rel="stylesheet"
-  />
-</svelte:head>
-
 <main>
   <NavBar />
   <div
-    class="flex flex-col rounded-md mr-5 ml-5 sm:ml-10 sm:mr-10 sm:pt-28 md:pb-28"
+    class="flex flex-col rounded-md mr-5 ml-5 sm:ml-10 sm:mr-10 sm:pt-28 md:pb-64"
     id="intro-container"
   >
     <div
@@ -175,7 +175,7 @@
     <iframe
       style="border-radius:12px; display:block; margin:auto;"
       class="w-full sm:w-96"
-      src="https://open.spotify.com/embed/track/3EAVnk4Dq0DPhlJLG5ljDc?utm_source=generator"
+      src="https://open.spotify.com/embed/track/1NaSrCqTnZdlusQ82SJhGN?utm_source=generator"
       height="100"
       frameBorder="0"
       allowfullscreen

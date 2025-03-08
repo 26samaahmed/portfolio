@@ -34,11 +34,11 @@
 
   let projects = [
     {
-      name: "Fullyhacks",
+      name: "MoaVerse",
       description:
-        "A website for the biggest hackathon in csuf, attracting 400+ applicants and 10 sponsors",
+        "A website for a txt, a k-pop group, that displays information about the group and their music",
       image: project4,
-      date: "February 2024",
+      date: "April 2024",
     },
     {
       name: "Aura",
@@ -65,7 +65,7 @@
 </script>
 
 <svelte:head>
-  <title>Sama's Design Portfolio</title>
+  <title>sama's design portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -77,7 +77,7 @@
 <main>
   <NavBar />
   <div
-    class="flex flex-col rounded-md mr-5 ml-5 sm:ml-10 sm:mr-10 sm:pt-28 md:pb-28"
+    class="flex flex-col rounded-md mr-5 ml-5 sm:ml-10 sm:mr-10 sm:pt-28 md:pb-64"
     id="intro-container"
   >
     <div
@@ -120,9 +120,7 @@
     class="grid grid-cols-1 sm:grid-cols-2 gap-12 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24"
     id="projects"
   >
-    <h1 class="col-span-1 sm:col-span-2 text-4xl">
-      Projects <span class="text-sm">(all designed using Figma)</span>
-    </h1>
+    <h1 class="col-span-1 sm:col-span-2 text-4xl">Projects</h1>
     {#each projects as project}
       <div class="relative group mb-8">
         <div class="flex flex-row justify-between">
@@ -150,7 +148,7 @@
     <iframe
       style="border-radius:12px; display:block; margin:auto;"
       class="w-full sm:w-96"
-      src="https://open.spotify.com/embed/track/0Xt3OOV9aA5g54iUYtaP9z?utm_source=generator"
+      src="https://open.spotify.com/embed/track/6NtVX4qwWMmAtNFaG485iq?utm_source=generator"
       height="100"
       frameBorder="0"
       allowfullscreen
