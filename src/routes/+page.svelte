@@ -59,7 +59,7 @@
         </svg>
         <h3 class="text-black text-md sm:text-xl">
           <a href="/coding-portfolio" class="no-underline hover:underline"
-            >View Coding Portfolio</a
+            >View Technical Portfolio</a
           >
         </h3>
       </div>
@@ -68,7 +68,7 @@
     <div
       class="flex-1 bg-black h-full flex flex-col justify-center items-center"
     >
-      <h1 class="text-white text-2xl sm:text-4xl">Aspiring Designer</h1>
+      <h1 class="text-white text-2xl sm:text-4xl">Aspiring Product Designer</h1>
 
       <div class="flex flex-row items-center space-x-3 mt-3">
         <h3 class="text-white text-md sm:text-xl">
