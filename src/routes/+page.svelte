@@ -29,9 +29,7 @@
         ><a href="mailto:ssama5336@gmail.com" target="_blank">Contact</a
         ></button
       >
-      <h1 class="text-black text-2xl sm:text-4xl">
-        Aspiring Software Engineer
-      </h1>
+      <h1 class="text-black text-2xl sm:text-4xl">software engineer</h1>
 
       <div class="flex flex-row items-center space-x-3 mt-3">
         <svg
@@ -68,7 +66,7 @@
     <div
       class="flex-1 bg-black h-full flex flex-col justify-center items-center"
     >
-      <h1 class="text-white text-2xl sm:text-4xl">Aspiring Product Designer</h1>
+      <h1 class="text-white text-2xl sm:text-4xl">ui/ux designer</h1>
 
       <div class="flex flex-row items-center space-x-3 mt-3">
         <h3 class="text-white text-md sm:text-xl">
