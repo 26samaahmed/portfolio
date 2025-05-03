@@ -1,13 +1,3 @@
-<svelte:head>
-  <title>sama's coding portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap"
-    rel="stylesheet"
-  />
-</svelte:head>
-
 <script>
   import NavBar from "../../components/NavBar.svelte";
   import college_highlight3 from "$lib/assets/college_highlight3.jpg";
@@ -65,26 +55,32 @@
   let college_highlights = [
     {
       img: college_highlight3,
-      title: "FullyHacks Design Officer",
-      info: "📍Fullyhacks Day, Spring 2024",
+      title: "College Highlight 3",
     },
     {
       img: college_highlight5,
-      title: "ACM CSUF Design Officer",
-      info: "📍Last ACM General Meeting, Spring 2024",
+      title: "College Highlight 5",
     },
     {
       img: college_highlight9,
-      title: "Open Source Software Co-Team Lead/Webmaster",
-      info: "📍First Contibutions oss worskhop, Fall 2024",
+      title: "College Highlight 9",
     },
     {
       img: college_highlight12,
-      title: "OSS Commencement",
-      info: "📍oss commencement, Fall 2024",
+      title: "College Highlight 12",
     },
   ];
 </script>
+
+<svelte:head>
+  <title>sama's coding portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap"
+    rel="stylesheet"
+  />
+</svelte:head>
 
 <main>
   <NavBar />
@@ -117,13 +113,12 @@
     <h1 class="text-3xl sm:text-4xl mb-5">College Highlights</h1>
     <div class="flex flex-wrap">
       {#each college_highlights as highlight}
-        <div class="w-full sm:w-1/2 p-2 mb-12 text-center">
+        <div class="w-full sm:w-1/2 p-2 mb-2">
           <img
             src={highlight.img}
             alt={highlight.title}
-            class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"
+            class="rounded-sm h-64 lg:h-96 w-full object-cover saturate-0 hover:saturate-100 transition-all duration-400"
           />
-          <p class="text-md sm:text-lg">{highlight.info}</p>
         </div>
       {/each}
     </div>

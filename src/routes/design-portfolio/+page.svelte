@@ -13,22 +13,18 @@
     {
       img: college_highlight2,
       title: "First Design workshop",
-      info: "📍First Design workshop, Spring 2024",
     },
     {
       img: college_highlight4,
       title: "Portfolio Competition with 25+ submissions",
-      info: "📍Portfolio Competition with 25+ submissions, Spring 2024",
     },
     {
       img: college_highlight8,
       title: "CSUF's first student-run designathon",
-      info: "📍Csuf's first student-run designathon, Summer 2024",
     },
     {
       img: college_highlight13,
       title: "Designathon 101 Workshop",
-      info: "📍Designathon 101 Workshop, Fall 2024",
     },
   ];
 
@@ -104,13 +100,12 @@
     <h1 class="text-3xl sm:text-4xl mb-5">College Highlights</h1>
     <div class="flex flex-wrap">
       {#each college_highlights as highlight}
-        <div class="w-full sm:w-1/2 p-2 mb-12 text-center">
+        <div class="w-full sm:w-1/2 p-2 mb-2">
           <img
             src={highlight.img}
             alt={highlight.title}
-            class="rounded-md mb-5 h-64 lg:h-96 w-full object-cover"
+            class="rounded-sm h-64 lg:h-96 w-full object-cover saturate-0 hover:saturate-100 transition-all duration-400"
           />
-          <p class="text-md sm:text-lg">{highlight.info}</p>
         </div>
       {/each}
     </div>
