@@ -110,7 +110,7 @@
   </div>
 
   <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24">
-    <h1 class="text-3xl sm:text-4xl mb-5">College Highlights</h1>
+    <h1 class="text-3xl sm:text-5xl mb-5">College Highlights</h1>
     <div class="flex flex-wrap">
       {#each college_highlights as highlight}
         <div class="w-full sm:w-1/2 p-2 mb-2">
@@ -125,7 +125,7 @@
   </div>
 
   <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-16" id="projects">
-    <h1 class="text-4xl text-black mb-5">Projects</h1>
+    <h1 class="text-5xl text-black mb-5">Projects</h1>
     {#each projects as project}
       <div
         class="flex flex-col bg-black text-white rounded-xl p-5 mb-7"

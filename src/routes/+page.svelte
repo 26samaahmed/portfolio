@@ -56,7 +56,9 @@
           />
         </svg>
         <h3 class="text-black text-md sm:text-xl">
-          <a href="/coding-portfolio" class="no-underline hover:underline"
+          <a
+            href="/coding-portfolio"
+            class="border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out"
             >View Technical Portfolio</a
           >
         </h3>
@@ -70,7 +72,9 @@
 
       <div class="flex flex-row items-center space-x-3 mt-3">
         <h3 class="text-white text-md sm:text-xl">
-          <a href="/design-portfolio" class="no-underline hover:underline"
+          <a
+            href="/design-portfolio"
+            class="border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out"
             >View Design Portfolio</a
           >
         </h3>
@@ -106,7 +110,7 @@
     class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full flex justify-center"
   >
     <p class="text-center text-md md:text-xl text-white md:text-black">
-      made with 💚 <span class="md:text-white">by Sama Ahmed</span>
+      Made with 💚 <span class="md:text-white">by Sama Ahmed</span>
     </p>
   </div>
 </main>
