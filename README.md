@@ -36,3 +36,10 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+TODOS:
+- [ ] Change thumbnails for design projects
+- [ ] Display more images that slides to the left as you scroll
+- [ ] Add an arrow slider for user to check more
+- [ ] Display some designs as a teaser in design portfolio
+- [ ] Display my roles/experiences in a unique way instead of listing it like a resume

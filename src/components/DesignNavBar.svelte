@@ -1,44 +1,83 @@
 <script>
   let buttons = [
-    {name: 'Home', link: '/'},
-    {name: 'Projects', link: '#projects'},
-    {name: 'Gallery', link: 'https://design-record.vercel.app/'},
-    {name: 'Resume', link: '/Sama_Ahmed_Design_2024_Resume.pdf'}
-  ]
+    { name: "Home", link: "/" },
+    { name: "Projects", link: "#projects" },
+    { name: "Gallery", link: "https://design-record.vercel.app/" },
+    { name: "Resume", link: "/Sama_Ahmed_Design_2024_Resume.pdf" },
+  ];
 
   function scrollIntoView({ target }) {
-        const el = document.querySelector(target.getAttribute('href'));
-        if (!el) return;
-        el.scrollIntoView({
-          behavior: 'smooth'
-        });
+    const el = document.querySelector(target.getAttribute("href"));
+    if (!el) return;
+    el.scrollIntoView({
+      behavior: "smooth",
+    });
   }
-
 </script>
 
 <main>
   <nav class="flex mr-5 ml-5 sm:ml-10 sm:mr-10 mt-7 items-center">
     <div class="flex-1 justify-start space-x-3 sm:space-x-8">
-      <a href="https://www.linkedin.com/in/sama-ahmedd/" target="_blank" rel="noopener noreferrer" class="no-underline hover:underline text-2xl">
-        <svg class="w-7 h-7 sm:w-10 sm:h-10 inline-block" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-          <path fill="#FFFFFF" d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+      <a
+        href="https://www.linkedin.com/in/sama-ahmedd/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="no-underline hover:underline text-2xl"
+      >
+        <svg
+          class="w-7 h-7 sm:w-10 sm:h-10 inline-block"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 50 50"
+        >
+          <path
+            fill="#FFFFFF"
+            d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"
+          ></path>
         </svg>
-      </a>    
-      
+      </a>
 
-      <a href="https://open.spotify.com/user/31ctofzgoost2ub5nsufbyuprlwu?si=cff0fded769547ed" target="_blank" rel="noopener noreferrer" class="no-underline hover:underline text-2xl">
-        <svg class="w-7 h-7 sm:w-10 sm:h-10 inline-block" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
-          <path fill="#FFFFFF" d="M25.009,1.982C12.322,1.982,2,12.304,2,24.991S12.322,48,25.009,48s23.009-10.321,23.009-23.009S37.696,1.982,25.009,1.982z M34.748,35.333c-0.289,0.434-0.765,0.668-1.25,0.668c-0.286,0-0.575-0.081-0.831-0.252C30.194,34.1,26,33,22.5,33.001 c-3.714,0.002-6.498,0.914-6.526,0.923c-0.784,0.266-1.635-0.162-1.897-0.948s0.163-1.636,0.949-1.897 c0.132-0.044,3.279-1.075,7.474-1.077C26,30,30.868,30.944,34.332,33.253C35.022,33.713,35.208,34.644,34.748,35.333z M37.74,29.193 c-0.325,0.522-0.886,0.809-1.459,0.809c-0.31,0-0.624-0.083-0.906-0.26c-4.484-2.794-9.092-3.385-13.062-3.35 c-4.482,0.04-8.066,0.895-8.127,0.913c-0.907,0.258-1.861-0.272-2.12-1.183c-0.259-0.913,0.272-1.862,1.184-2.12 c0.277-0.079,3.854-0.959,8.751-1c4.465-0.037,10.029,0.61,15.191,3.826C37.995,27.328,38.242,28.388,37.74,29.193z M40.725,22.013 C40.352,22.647,39.684,23,38.998,23c-0.344,0-0.692-0.089-1.011-0.275c-5.226-3.068-11.58-3.719-15.99-3.725 c-0.021,0-0.042,0-0.063,0c-5.333,0-9.44,0.938-9.481,0.948c-1.078,0.247-2.151-0.419-2.401-1.495 c-0.25-1.075,0.417-2.149,1.492-2.4C11.729,16.01,16.117,15,21.934,15c0.023,0,0.046,0,0.069,0 c4.905,0.007,12.011,0.753,18.01,4.275C40.965,19.835,41.284,21.061,40.725,22.013z"></path>
+      <a
+        href="https://open.spotify.com/user/31ctofzgoost2ub5nsufbyuprlwu?si=cff0fded769547ed"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="no-underline hover:underline text-2xl"
+      >
+        <svg
+          class="w-7 h-7 sm:w-10 sm:h-10 inline-block"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 50 50"
+        >
+          <path
+            fill="#FFFFFF"
+            d="M25.009,1.982C12.322,1.982,2,12.304,2,24.991S12.322,48,25.009,48s23.009-10.321,23.009-23.009S37.696,1.982,25.009,1.982z M34.748,35.333c-0.289,0.434-0.765,0.668-1.25,0.668c-0.286,0-0.575-0.081-0.831-0.252C30.194,34.1,26,33,22.5,33.001 c-3.714,0.002-6.498,0.914-6.526,0.923c-0.784,0.266-1.635-0.162-1.897-0.948s0.163-1.636,0.949-1.897 c0.132-0.044,3.279-1.075,7.474-1.077C26,30,30.868,30.944,34.332,33.253C35.022,33.713,35.208,34.644,34.748,35.333z M37.74,29.193 c-0.325,0.522-0.886,0.809-1.459,0.809c-0.31,0-0.624-0.083-0.906-0.26c-4.484-2.794-9.092-3.385-13.062-3.35 c-4.482,0.04-8.066,0.895-8.127,0.913c-0.907,0.258-1.861-0.272-2.12-1.183c-0.259-0.913,0.272-1.862,1.184-2.12 c0.277-0.079,3.854-0.959,8.751-1c4.465-0.037,10.029,0.61,15.191,3.826C37.995,27.328,38.242,28.388,37.74,29.193z M40.725,22.013 C40.352,22.647,39.684,23,38.998,23c-0.344,0-0.692-0.089-1.011-0.275c-5.226-3.068-11.58-3.719-15.99-3.725 c-0.021,0-0.042,0-0.063,0c-5.333,0-9.44,0.938-9.481,0.948c-1.078,0.247-2.151-0.419-2.401-1.495 c-0.25-1.075,0.417-2.149,1.492-2.4C11.729,16.01,16.117,15,21.934,15c0.023,0,0.046,0,0.069,0 c4.905,0.007,12.011,0.753,18.01,4.275C40.965,19.835,41.284,21.061,40.725,22.013z"
+          ></path>
         </svg>
-      </a>      
+      </a>
     </div>
 
     <div class="flex justify-end space-x-3 md:space-x-8">
       {#each buttons as button}
-        {#if button.link === '#projects'}
-          <a href={button.link} on:click|preventDefault={scrollIntoView} class="no-underline hover:underline transition-all duration-300 ease-in-out text:lg sm:text-2xl">{button.name}</a>
+        {#if button.link === "#projects"}
+          <a
+            href={button.link}
+            on:click|preventDefault={scrollIntoView}
+            class="no-underline hover:underline transition-all duration-300 ease-in-out text:lg sm:text-3xl"
+            >{button.name}</a
+          >
         {:else}
-          <a href={button.link} class="no-underline hover:underline transition-all duration-300 ease-in-out text:lg sm:text-2xl">{button.name}</a>
+          <a
+            href={button.link}
+            class="no-underline hover:underline transition-all duration-300 ease-in-out text:lg sm:text-3xl"
+            >{button.name}</a
+          >
         {/if}
       {/each}
     </div>

@@ -65,7 +65,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
     rel="stylesheet"
   />
 </svelte:head>
@@ -143,7 +143,7 @@
     <iframe
       style="border-radius:12px; display:block; margin:auto;"
       class="w-full sm:w-96"
-      src="https://open.spotify.com/embed/track/6NtVX4qwWMmAtNFaG485iq?utm_source=generator"
+      src="https://open.spotify.com/embed/track/0wwA0ZXgJTcuIWZrBP6G96?utm_source=generator"
       height="100"
       frameBorder="0"
       allowfullscreen
@@ -162,7 +162,7 @@
   :global(body) {
     background-color: black;
     color: white;
-    font-family: "Baskervville SC", serif;
+    font-family: "Shadows Into Light", cursive;
   }
 
   .group img {

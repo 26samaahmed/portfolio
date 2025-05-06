@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
     rel="stylesheet"
   />
 </svelte:head>
@@ -29,7 +29,7 @@
         ><a href="mailto:ssama5336@gmail.com" target="_blank">Contact</a
         ></button
       >
-      <h1 class="text-black text-2xl sm:text-4xl">software engineer</h1>
+      <h1 class="text-black text-2xl sm:text-4xl">Software Engineer</h1>
 
       <div class="flex flex-row items-center space-x-3 mt-3">
         <svg
@@ -66,7 +66,7 @@
     <div
       class="flex-1 bg-black h-full flex flex-col justify-center items-center"
     >
-      <h1 class="text-white text-2xl sm:text-4xl">ui/ux designer</h1>
+      <h1 class="text-white text-2xl sm:text-4xl">UI/UX Designer</h1>
 
       <div class="flex flex-row items-center space-x-3 mt-3">
         <h3 class="text-white text-md sm:text-xl">
@@ -105,15 +105,15 @@
   <div
     class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full flex justify-center"
   >
-    <p class="text-center text-md md:text-lg text-white md:text-black">
-      made with 💚<span class="md:text-white">by sama ahmed</span>
+    <p class="text-center text-md md:text-xl text-white md:text-black">
+      made with 💚 <span class="md:text-white">by Sama Ahmed</span>
     </p>
   </div>
 </main>
 
 <style>
   :global(body) {
-    font-family: "Baskervville SC", serif;
+    font-family: "Shadows Into Light", cursive;
   }
 
   button {
