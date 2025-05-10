@@ -2,7 +2,7 @@
   let buttons = [
     { name: "Home", link: "/" },
     { name: "Projects", link: "#projects" },
-    { name: "Resume", link: "/Sama_Ahmed_2024_Resume.pdf" },
+    { name: "Resume", link: "/Sama_Ahmed_Resume.pdf" },
   ];
 
   function scrollIntoView({ target }) {
