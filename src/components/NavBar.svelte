@@ -66,7 +66,7 @@
           <a
             href={button.link}
             on:click|preventDefault={scrollIntoView}
-            class="border-b-2 border-transparent hover:border-current transition duration-300 ease-in-outtext:lg sm:text-3xl text-center"
+            class="border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out text:lg sm:text-3xl text-center"
             >{button.name}</a
           >
         {:else}

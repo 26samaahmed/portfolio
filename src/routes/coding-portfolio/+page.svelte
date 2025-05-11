@@ -5,50 +5,60 @@
   import college_highlight9 from "$lib/assets/college_highlight9.jpg";
   import college_highlight12 from "$lib/assets/college_highlight12.jpg";
 
-  let project_type = false; // false = personal project, true = group project
-
   let projects = [
     {
       name: "SkySong",
       link: "https://github.com/26samaahmed/skysong",
-      teck_stack:
-        "python, flask, html, css, spotify api, openweather api, spotipy",
+      teck_stack: [
+        "SvelteKit",
+        "TailwindCSS",
+        "JavaScript",
+        "Openweathermap API",
+        "Spotify API",
+      ],
       description:
         "A website where the current temperature is displayed and songs of the hour are recommended for people to listen to. The lower the temperature, the calmer the music. If the temperature is high, then upbeat music will be recommended.",
-      project_type: project_type,
     },
     {
       name: "Concert Tracker",
       link: "https://github.com/26samaahmed/concert-tracker",
-      teck_stack: "ticketmaster api, sveltekit, html, css, javascript",
+      teck_stack: [
+        "SvelteKit",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Ticketmaster API",
+      ],
       description:
-        "A website where users can search for concerts by city name and month and see the upcoming concerts in that city.",
-      project_type: project_type,
+        "A website where users can search for concerts by city name and month and see the upcoming concerts in that city."
     },
     {
       name: "Fullybeyond",
       link: "https://github.com/26samaahmed/fullybeyond",
-      teck_stack: "sveltekit, tailwindcss, javascript",
+      teck_stack: ["SvelteKit", "TailwindCSS", "JavaScript"],
       description:
-        "A website for CSUF's first student-led designathon that shows information about the event like the schedule, sponsors, and judges developed with 4 other team members.",
-      project_type: !project_type,
+        "A website for CSUF's first student-led designathon that shows information about the event like the schedule, sponsors, and judges developed with 4 other team members."
     },
     {
       name: "acmcsuf.com",
       link: "https://github.com/26samaahmed/acmcsuf.com",
-      teck_stack: "sveltekit, typescript",
+      teck_stack: ["Sveltekit", "TypeScript"],
       description:
-        "A website for the Association for Computing Machinery at California State University, Fullerton with 50+ contributers that shows information about the club, events, and resources. As the webmaster, I am responsible for maintaining the website and updating it with new information.",
-      project_type: !project_type,
+        "A website for the Association for Computing Machinery at California State University, Fullerton with 70+ contributers that shows information about the club, events, and resources. As the webmaster, I am responsible for maintaining the website and updating it with new information."
     },
     {
       name: "PlaylistExporter",
       link: "https://github.com/JOwen-ster/PlaylistExporter",
-      teck_stack:
-        "python, flask, svelte, tailwindcss, spotify api, youtube api",
+      teck_stack: [
+        "Python",
+        "Flask",
+        "Svelte",
+        "TailwindCSS",
+        "Spotify API",
+        "YouTube API",
+      ],
       description:
-        "A website where users can export their spotify playlists to youtube playlists.",
-      project_type: !project_type,
+        "A website where users can export their spotify playlists to youtube playlists."
     },
   ];
 
@@ -124,7 +134,7 @@
     </div>
   </div>
 
-  <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-16" id="projects">
+  <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-16">
     <h1 class="text-5xl text-black mb-5">Projects</h1>
     {#each projects as project}
       <div
@@ -147,9 +157,21 @@
             </p>
           {/if}
         </div>
-        <h3 class="mb-2">Tech Stack: {project.teck_stack}</h3>
-        <p class="mb-2">- {project.description}</p>
-        <a href={project.link} target="_blank" class="text-blue-500"
+
+        <div class="flex flex-wrap gap-2">
+          {#each project.teck_stack as stack}
+            <p
+              class="bg-white text-sm text-black rounded-lg mb-2 w-32 text-center"
+            >
+              {stack}
+            </p>
+          {/each}
+        </div>
+        <p class="mb-2">{project.description}</p>
+        <a
+          href={project.link}
+          target="_blank"
+          class="text-blue-500 border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out w-20 text-center"
           >View Project</a
         >
       </div>
@@ -189,15 +211,5 @@
   :global(body) {
     background-color: white;
     font-family: "Shadows Into Light", cursive;
-  }
-
-  #project-container {
-    transition: 0.3s;
-  }
-
-  #project-container:hover {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
   }
 </style>
