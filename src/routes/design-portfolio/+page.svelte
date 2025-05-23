@@ -74,7 +74,6 @@
   <NavBar />
   <div
     class="flex flex-col rounded-md mr-5 ml-5 sm:ml-10 sm:mr-10 sm:pt-28 md:pb-64"
-    id="intro-container"
   >
     <div
       class="flex flex-col sm:flex-row justify-start items-start w-full mb-8 pt-16 text-left"
@@ -83,10 +82,6 @@
         class="text-2xl sm:text-3xl md:text-5xl xl:text-5xl sm:mr-4 mb-4 sm:mb-0"
       >
         I'm Sama Ahmed
-      </h1>
-      <div class="hidden sm:block w-[2px] h-16 bg-gray-500"></div>
-      <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-5xl sm:ml-4">
-        أنا سما أحمد
       </h1>
     </div>
     <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5 text-left">
