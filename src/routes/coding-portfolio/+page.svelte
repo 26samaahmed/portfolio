@@ -5,6 +5,25 @@
   import college_highlight9 from "$lib/assets/college_highlight9.jpg";
   import college_highlight12 from "$lib/assets/college_highlight12.jpg";
 
+  let college_highlights = [
+    {
+      img: college_highlight3,
+      title: "College Highlight 3",
+    },
+    {
+      img: college_highlight12,
+      title: "College Highlight 12",
+    },
+    {
+      img: college_highlight5,
+      title: "College Highlight 5",
+    },
+    {
+      img: college_highlight9,
+      title: "College Highlight 9",
+    }
+  ];
+
   let projects = [
     {
       name: "SkySong",
@@ -17,7 +36,7 @@
         "Spotify API",
       ],
       description:
-        "A website where the current temperature is displayed and songs of the hour are recommended for people to listen to. The lower the temperature, the calmer the music. If the temperature is high, then upbeat music will be recommended."
+        "A website where the current temperature is displayed and songs of the hour are recommended for people to listen to. The lower the temperature, the calmer the music. If the temperature is high, then upbeat music will be recommended.",
     },
     {
       name: "Concert Tracker",
@@ -30,21 +49,21 @@
         "Ticketmaster API",
       ],
       description:
-        "A website where users can search for concerts by city name and month and see the upcoming concerts in that city."
+        "A website where users can search for concerts by city name and month and see the upcoming concerts in that city.",
     },
     {
       name: "Fullybeyond",
       link: "https://github.com/26samaahmed/fullybeyond",
       teck_stack: ["SvelteKit", "TailwindCSS", "JavaScript"],
       description:
-        "A website for CSUF's first student-led designathon that shows information about the event like the schedule, sponsors, and judges developed with 4 other team members."
+        "A website for CSUF's first student-led designathon that shows information about the event like the schedule, sponsors, and judges developed with 4 other team members.",
     },
     {
       name: "acmcsuf.com",
       link: "https://github.com/26samaahmed/acmcsuf.com",
       teck_stack: ["Sveltekit", "TypeScript"],
       description:
-        "A website for the Association for Computing Machinery at California State University, Fullerton with 70+ contributers that shows information about the club, events, and resources. As the webmaster, I am responsible for maintaining the website and updating it with new information."
+        "A website for the Association for Computing Machinery at California State University, Fullerton with 70+ contributers that shows information about the club, events, and resources. As the webmaster, I am responsible for maintaining the website and updating it with new information.",
     },
     {
       name: "PlaylistExporter",
@@ -58,26 +77,7 @@
         "YouTube API",
       ],
       description:
-        "A website where users can export their spotify playlists to youtube playlists."
-    },
-  ];
-
-  let college_highlights = [
-    {
-      img: college_highlight3,
-      title: "College Highlight 3",
-    },
-    {
-      img: college_highlight5,
-      title: "College Highlight 5",
-    },
-    {
-      img: college_highlight9,
-      title: "College Highlight 9",
-    },
-    {
-      img: college_highlight12,
-      title: "College Highlight 12",
+        "A website where users can export their spotify playlists to youtube playlists.",
     },
   ];
 </script>
@@ -129,53 +129,42 @@
     </div>
   </div>
 
-  <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-16">
+  <div class="ml-5 mr-5 sm:ml-10 sm:mr-10 mt-16">
     <h1 class="text-5xl text-black mb-5">Projects</h1>
-    {#each projects as project}
-      <div
-        class="flex flex-col bg-black text-white rounded-xl p-5 mb-7"
-        id="project-container"
-      >
-        <div class="md:flex md:justify-between items-center">
-          <h2 class="text-2xl mb-2">{project.name}</h2>
-          {#if project.project_type == false}
-            <p
-              class="bg-white text-sm text-black rounded-lg w-36 mb-5 text-center"
-            >
-              Personal Project
-            </p>
-          {:else}
-            <p
-              class="bg-white text-sm text-black rounded-lg w-36 mb-5 text-center"
-            >
-              Group Project
-            </p>
-          {/if}
-        </div>
+    <div class="flex flex-wrap -mx-2">
+      {#each projects as project}
+        <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-7">
+          <div class="flex flex-col rounded p-6 border-black border-2 h-full">
+            <div class="md:flex md:justify-between items-center">
+              <h2 class="text-2xl mb-2">{project.name}</h2>
+            </div>
 
-        <div class="flex flex-wrap gap-2">
-          {#each project.teck_stack as stack}
-            <p
-              class="bg-white text-sm text-black rounded-lg mb-2 w-32 text-center"
+            <div class="flex flex-wrap gap-2 mb-2">
+              {#each project.teck_stack as stack}
+                <p
+                  class="bg-black text-sm text-white rounded-lg w-32 text-center"
+                >
+                  {stack}
+                </p>
+              {/each}
+            </div>
+
+            <p class="mb-2">{project.description}</p>
+            <a
+              href={project.link}
+              target="_blank"
+              class="text-blue-500 border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out w-20 text-center"
+              >View Project</a
             >
-              {stack}
-            </p>
-          {/each}
+          </div>
         </div>
-        <p class="mb-2">{project.description}</p>
-        <a
-          href={project.link}
-          target="_blank"
-          class="text-blue-500 border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out w-20 text-center"
-          >View Project</a
-        >
-      </div>
-    {/each}
+      {/each}
+    </div>
+
     <p class="text-lg text-black mb-5 text-end mr-4">
-      Check out more on my <a
-        class="underline"
-        href="https://github.com/26samaahmed"
-        target="_blank">github</a
+      Check out more on my
+      <a class="underline" href="https://github.com/26samaahmed" target="_blank"
+        >github</a
       >
     </p>
   </div>
