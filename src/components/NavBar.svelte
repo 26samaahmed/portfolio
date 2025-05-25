@@ -1,8 +1,8 @@
 <script>
   let buttons = [
-    { name: "Home", link: "/" },
-    { name: "Projects", link: "#projects" },
-    { name: "Resume", link: "/Sama_Ahmed_Resume.pdf" },
+    { name: "home", link: "/" },
+    { name: "projects", link: "#projects" },
+    { name: "resume", link: "/Sama_Ahmed_Resume.pdf" },
   ];
 
   function scrollIntoView({ target }) {

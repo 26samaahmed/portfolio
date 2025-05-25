@@ -1,9 +1,9 @@
 <script>
   let buttons = [
-    { name: "Home", link: "/" },
-    { name: "Projects", link: "#projects" },
-    { name: "Gallery", link: "https://design-record.vercel.app/" },
-    { name: "Resume", link: "/Sama_Ahmed_Design_2024_Resume.pdf" },
+    { name: "home", link: "/" },
+    { name: "projects", link: "#projects" },
+    { name: "gallery", link: "https://design-record.vercel.app/" },
+    { name: "resume", link: "/Sama_Ahmed_Design_2024_Resume.pdf" },
   ];
 
   function scrollIntoView({ target }) {

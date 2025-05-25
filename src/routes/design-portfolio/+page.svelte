@@ -30,32 +30,32 @@
 
   let projects = [
     {
-      name: "MoaVerse",
+      name: "moaverse",
       description:
-        "A website for a txt, a k-pop group, that displays information about the group and their music",
+        "a website for a txt, a k-pop group, that displays information about the group and their music",
       image: project4,
-      date: "April 2024",
+      date: "april 2024",
     },
     {
-      name: "Aura",
+      name: "aura",
       description:
-        "A mobile app dedicated for deaf people to feel music in a different way through visuals made by people with color synthesia",
+        "a mobile app dedicated for deaf people to feel music in a different way through visuals made by people with color synthesia",
       image: project2,
-      date: "April 2024",
+      date: "april 2024",
     },
     {
-      name: "FishTank",
+      name: "fishtank",
       description:
-        "A mobile app that allows for students in college to meet new friends by joining activities happening on campus",
+        "a mobile app that allows for students in college to meet new friends by joining activities happening on campus",
       image: project3,
-      date: "April 2024",
+      date: "april 2024",
     },
     {
-      name: "E-GO",
+      name: "e-go",
       description:
-        "A mobile app that helps people that need a ride without having to search on multiple platforms",
+        "a mobile app that helps people that need a ride without having to search on multiple platforms",
       image: project1,
-      date: "May 2024",
+      date: "may 2024",
     },
   ];
 </script>
@@ -65,7 +65,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
     rel="stylesheet"
   />
 </svelte:head>
@@ -81,18 +81,22 @@
       <h1
         class="text-2xl sm:text-3xl md:text-5xl xl:text-5xl sm:mr-4 mb-4 sm:mb-0"
       >
-        I'm Sama Ahmed
+        hi, i'm sama ahmed
       </h1>
     </div>
     <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5 text-left">
-      a passionate computer science student @csuf with a deep interest in ui/ux
-      design, driven by creating user-centered experiences and eager to bring
-      ideas to life.
+      ui/ux enthusiast with a passion for <em
+        >designing intuitive web interfaces</em
+      >
+      and
+      <em>building user-centered web applications</em> — driven to
+      <em>bring ideas to life</em>
+      through purposeful, creative design ⋆. 𐙚 ˚
     </h2>
   </div>
 
   <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24">
-    <h1 class="text-3xl sm:text-5xl mb-5">College Highlights</h1>
+    <h1 class="text-3xl sm:text-5xl mb-5">college highlights</h1>
     <div class="flex flex-wrap">
       {#each college_highlights as highlight}
         <div class="w-full sm:w-1/2 p-2 mb-2">
@@ -110,7 +114,7 @@
     class="grid grid-cols-1 sm:grid-cols-2 gap-12 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24"
     id="projects"
   >
-    <h1 class="col-span-1 sm:col-span-2 text-5xl">Projects</h1>
+    <h1 class="col-span-1 sm:col-span-2 text-5xl">projects</h1>
     {#each projects as project}
       <div class="relative group mb-8">
         <div class="flex flex-row justify-between">
@@ -133,7 +137,7 @@
 
   <div class="text-center mt-16 m-5">
     <p class="text-md mb-2">
-      Thank you for making it this far! Here is a song recommendation for you:
+      thank you for making it this far! here is a song recommendation for you:
     </p>
     <iframe
       style="border-radius:12px; display:block; margin:auto;"
@@ -149,7 +153,7 @@
     </iframe>
   </div>
   <p class="text-center mt-5 text-md md:text-lg text-white">
-    Made with 💚 by Sama Ahmed
+    made with 💚 by sama ahmed
   </p>
 </main>
 
@@ -157,7 +161,7 @@
   :global(body) {
     background-color: black;
     color: white;
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Alegreya Sans SC", sans-serif;
   }
 
   .group img {

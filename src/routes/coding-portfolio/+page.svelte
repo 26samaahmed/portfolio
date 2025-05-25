@@ -21,63 +21,58 @@
     {
       img: college_highlight9,
       title: "College Highlight 9",
-    }
+    },
   ];
 
   let projects = [
     {
-      name: "SkySong",
+      name: "skysong",
       link: "https://github.com/26samaahmed/skysong",
       teck_stack: [
-        "SvelteKit",
-        "TailwindCSS",
-        "JavaScript",
-        "Openweathermap API",
-        "Spotify API",
+        "html",
+        "css",
+        "python",
+        "flask",
+        "openweathermap api",
+        "spotify api",
       ],
       description:
-        "A website where the current temperature is displayed and songs of the hour are recommended for people to listen to. The lower the temperature, the calmer the music. If the temperature is high, then upbeat music will be recommended.",
+        "a website where the current temperature is displayed and songs of the hour are recommended for people to listen to. The lower the temperature, the calmer the music. If the temperature is high, then upbeat music will be recommended",
     },
     {
-      name: "Concert Tracker",
+      name: "concert tracker",
       link: "https://github.com/26samaahmed/concert-tracker",
-      teck_stack: [
-        "SvelteKit",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Ticketmaster API",
-      ],
+      teck_stack: ["SvelteKit", "ticketmaster api"],
       description:
-        "A website where users can search for concerts by city name and month and see the upcoming concerts in that city.",
+        "a website where users can search for concerts by city name and month and see the upcoming concerts in that city",
     },
     {
-      name: "Fullybeyond",
+      name: "fullybeyond",
       link: "https://github.com/26samaahmed/fullybeyond",
-      teck_stack: ["SvelteKit", "TailwindCSS", "JavaScript"],
+      teck_stack: ["svelteKit", "tailwindCSS"],
       description:
-        "A website for CSUF's first student-led designathon that shows information about the event like the schedule, sponsors, and judges developed with 4 other team members.",
+        "a website for csuf's first student-led designathon that shows information about the event like the schedule, sponsors, and judges developed with 4 other team members",
     },
     {
       name: "acmcsuf.com",
       link: "https://github.com/26samaahmed/acmcsuf.com",
-      teck_stack: ["Sveltekit", "TypeScript"],
+      teck_stack: ["sveltekit", "typeScript"],
       description:
-        "A website for the Association for Computing Machinery at California State University, Fullerton with 70+ contributers that shows information about the club, events, and resources. As the webmaster, I am responsible for maintaining the website and updating it with new information.",
+        "a website for the association for computing machinery at california state university, fullerton with 70+ contributers that shows information about the club, events, and resources",
     },
     {
-      name: "PlaylistExporter",
+      name: "playlist exporter",
       link: "https://github.com/JOwen-ster/PlaylistExporter",
       teck_stack: [
-        "Python",
-        "Flask",
-        "Svelte",
-        "TailwindCSS",
-        "Spotify API",
-        "YouTube API",
+        "python",
+        "flask",
+        "svelteKit",
+        "tailwindCSS",
+        "spotify API",
+        "youTube API",
       ],
       description:
-        "A website where users can export their spotify playlists to youtube playlists.",
+        "a website where users can export their spotify playlists to youtube playlists",
     },
   ];
 </script>
@@ -87,7 +82,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap"
     rel="stylesheet"
   />
 </svelte:head>
@@ -103,19 +98,24 @@
       <h1
         class="text-2xl sm:text-3xl md:text-5xl xl:text-5xl sm:mr-4 mb-4 sm:mb-0"
       >
-        I'm Sama Ahmed
+        hi, i'm sama ahmed
       </h1>
     </div>
 
     <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5 text-left">
-      a passionate computer science student @csuf who loves solving problems
-      with code and enjoys taking on leadership roles to help projects and teams
-      succeed
+      frontend-focused developer with a passion for <em
+        >building responsive web applications</em
+      >
+      and
+      <em>creating seamless user experiences</em> — driven to
+      <em>lead with initiative</em>
+      and
+      <em>collaborate with purpose</em> ⋆. 𐙚 ˚
     </h2>
   </div>
 
   <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24">
-    <h1 class="text-3xl sm:text-5xl mb-5">College Highlights</h1>
+    <h1 class="text-3xl sm:text-5xl mb-5">college highlights</h1>
     <div class="flex flex-wrap">
       {#each college_highlights as highlight}
         <div class="w-full sm:w-1/2 p-2 mb-2">
@@ -130,15 +130,16 @@
   </div>
 
   <div class="ml-5 mr-5 sm:ml-10 sm:mr-10 mt-16">
-    <h1 class="text-5xl text-black mb-5">Projects</h1>
+    <h1 class="text-5xl text-black mb-5">projects</h1>
     <div class="flex flex-wrap -mx-2">
       {#each projects as project}
         <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-7">
-          <div class="flex flex-col rounded p-6 border-black border-2 h-full">
+          <div class="flex flex-col rounded p-4 border-black border-2 h-full">
             <div class="md:flex md:justify-between items-center">
               <h2 class="text-2xl mb-2">{project.name}</h2>
             </div>
 
+            <p class="mb-2">{project.description}</p>
             <div class="flex flex-wrap gap-2 mb-2">
               {#each project.teck_stack as stack}
                 <p
@@ -149,12 +150,11 @@
               {/each}
             </div>
 
-            <p class="mb-2">{project.description}</p>
             <a
               href={project.link}
               target="_blank"
-              class="text-blue-500 border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out w-20 text-center"
-              >View Project</a
+              class="text-blue-500 border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out w-24 text-center"
+              >view project</a
             >
           </div>
         </div>
@@ -162,7 +162,7 @@
     </div>
 
     <p class="text-lg text-black mb-5 text-end mr-4">
-      Check out more on my
+      check out more on my
       <a class="underline" href="https://github.com/26samaahmed" target="_blank"
         >github</a
       >
@@ -171,7 +171,7 @@
 
   <div class="text-center mt-16 m-5">
     <p class="text-md mb-2">
-      Thank you for making it this far! Here is a song recommendation for you:
+      thank you for making it this far! here is a song recommendation for you:
     </p>
     <iframe
       style="border-radius:12px; display:block; margin:auto;"
@@ -187,7 +187,7 @@
     </iframe>
   </div>
   <p class="text-center mt-5 text-md md:text-lg text-black">
-    Made with 💚 by Sama Ahmed
+    made with 💚 by sama ahmed
   </p>
 </main>
 
@@ -195,6 +195,6 @@
   :global(body) {
     background-color: white;
     color: black;
-    font-family: "Shadows Into Light", cursive;
+    font-family: "Alegreya Sans SC", sans-serif;
   }
 </style>
