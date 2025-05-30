@@ -4,10 +4,10 @@
 
 <svelte:head>
   <title>Sama Ahmed's Portfolio</title>
-  <meta name="description" content="sama ahmed's personal website, 2024" />
+  <meta name="description" content="Sama Ahmed's Portfolio, 2025" />
   <meta
     name="keywords"
-    content="sama ahmed, computer science, cal state fullerton"
+    content="Sama Ahmed, Computer Science, Cal State Fullerton"
   />
   <meta name="author" content="sama ahmed" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,9 +56,7 @@
           />
         </svg>
         <h3 class="text-black text-md sm:text-xl">
-          <a
-            href="/coding-portfolio"
-            class="border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out"
+          <a href="/technical-portfolio" class="redirect-technical"
             >view technical portfolio</a
           >
         </h3>
@@ -72,9 +70,7 @@
 
       <div class="flex flex-row items-center space-x-3 mt-3">
         <h3 class="text-white text-md sm:text-xl">
-          <a
-            href="/design-portfolio"
-            class="border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out"
+          <a href="/design-portfolio" class="redirect-design"
             >view design portfolio</a
           >
         </h3>
@@ -126,5 +122,35 @@
   button:hover {
     background-color: black;
     color: white;
+  }
+
+  .redirect-design,
+  .redirect-technical {
+    display: inline-block;
+    position: relative;
+  }
+
+  .redirect-design::after,
+  .redirect-technical::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .redirect-technical::after {
+    background-color: black;
+  }
+
+  .redirect-design:hover::after,
+  .redirect-technical:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 </style>

@@ -61,7 +61,7 @@
 </script>
 
 <svelte:head>
-  <title>sama's design portfolio</title>
+  <title>Design Portfolio - Sama Ahmed</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -142,7 +142,7 @@
     <iframe
       style="border-radius:12px; display:block; margin:auto;"
       class="w-full sm:w-96"
-      src="https://open.spotify.com/embed/track/0wwA0ZXgJTcuIWZrBP6G96?utm_source=generator"
+      src="https://open.spotify.com/embed/track/0xtIp0lgccN85GfGOekS5L?utm_source=generator"
       height="100"
       frameBorder="0"
       allowfullscreen

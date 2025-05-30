@@ -69,17 +69,35 @@
           <a
             href={button.link}
             on:click|preventDefault={scrollIntoView}
-            class="border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out text:lg sm:text-3xl"
-            >{button.name}</a
+            class="buttons text:lg sm:text-3xl">{button.name}</a
           >
         {:else}
-          <a
-            href={button.link}
-            class="border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out text:lg sm:text-3xl"
-            >{button.name}</a
-          >
+          <a href={button.link} class="buttons text:lg sm:text-3xl">{button.name}</a>
         {/if}
       {/each}
     </div>
   </nav>
 </main>
+
+<style>
+  .buttons {
+    display: inline-block;
+    position: relative;
+  }
+  .buttons::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .buttons:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+</style>

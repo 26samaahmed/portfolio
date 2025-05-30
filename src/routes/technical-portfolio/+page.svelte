@@ -37,28 +37,28 @@
         "spotify api",
       ],
       description:
-        "a website where the current temperature is displayed and songs of the hour are recommended for people to listen to. The lower the temperature, the calmer the music. If the temperature is high, then upbeat music will be recommended",
+        "☆ a website where the current temperature is displayed and songs of the hour are recommended for people to listen to. The lower the temperature, the calmer the music. If the temperature is high, then upbeat music will be recommended",
     },
     {
       name: "concert tracker",
       link: "https://github.com/26samaahmed/concert-tracker",
-      teck_stack: ["SvelteKit", "ticketmaster api"],
+      teck_stack: ["sveltekit", "ticketmaster api"],
       description:
-        "a website where users can search for concerts by city name and month and see the upcoming concerts in that city",
+        "☆ a website where users can search for concerts by city name and month and see the upcoming concerts in that city",
     },
     {
       name: "fullybeyond",
       link: "https://github.com/26samaahmed/fullybeyond",
-      teck_stack: ["svelteKit", "tailwindCSS"],
+      teck_stack: ["sveltekit", "tailwindcss"],
       description:
-        "a website for csuf's first student-led designathon that shows information about the event like the schedule, sponsors, and judges developed with 4 other team members",
+        "☆ a website for csuf's first student-led designathon that shows information about the event like the schedule, sponsors, and judges developed with 4 other team members",
     },
     {
       name: "acmcsuf.com",
       link: "https://github.com/26samaahmed/acmcsuf.com",
-      teck_stack: ["sveltekit", "typeScript"],
+      teck_stack: ["sveltekit", "typescript"],
       description:
-        "a website for the association for computing machinery at california state university, fullerton with 70+ contributers that shows information about the club, events, and resources",
+        "☆ a website for the association for computing machinery at california state university, fullerton with 70+ contributers that shows information about the club, events, and resources",
     },
     {
       name: "playlist exporter",
@@ -66,19 +66,19 @@
       teck_stack: [
         "python",
         "flask",
-        "svelteKit",
-        "tailwindCSS",
-        "spotify API",
-        "youTube API",
+        "sveltekit",
+        "tailwindcss",
+        "spotify api",
+        "youtube api",
       ],
       description:
-        "a website where users can export their spotify playlists to youtube playlists",
+        "☆ a website where users can export their spotify playlists to youtube playlists",
     },
   ];
 </script>
 
 <svelte:head>
-  <title>sama's coding portfolio</title>
+  <title>Technical Portfolio - Sama Ahmed</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -176,7 +176,7 @@
     <iframe
       style="border-radius:12px; display:block; margin:auto;"
       class="w-full sm:w-96"
-      src="https://open.spotify.com/embed/track/0luIZaA4wYL4ftOvMAn3nU?utm_source=generator"
+      src="https://open.spotify.com/embed/track/54Z2Nr6JA67vqyNAWVYlBD?utm_source=generator"
       height="100"
       frameBorder="0"
       allowfullscreen
