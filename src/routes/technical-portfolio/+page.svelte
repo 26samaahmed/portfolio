@@ -129,7 +129,7 @@
     </div>
   </div>
 
-  <div class="ml-5 mr-5 sm:ml-10 sm:mr-10 mt-16">
+  <div class="ml-5 mr-5 sm:ml-10 sm:mr-10 mt-16" id="projects">
     <h1 class="text-5xl text-black mb-5">projects</h1>
     <div class="flex flex-wrap -mx-2">
       {#each projects as project}
