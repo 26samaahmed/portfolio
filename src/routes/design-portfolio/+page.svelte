@@ -83,7 +83,7 @@
 <main>
   <NavBar />
   <div
-    class="flex flex-col rounded-md mr-5 ml-5 sm:ml-10 sm:mr-10 sm:pt-28 md:pb-64"
+    class="flex flex-col rounded-md mr-5 ml-5 sm:ml-16 sm:mr-16 sm:pt-28 md:pb-64"
   >
     <div
       class="flex flex-col sm:flex-row justify-start items-start w-full mb-8 pt-16 text-left"
@@ -105,8 +105,8 @@
     </h2>
   </div>
 
-  <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24">
-    <h1 class="text-3xl sm:text-4xl mb-5">college highlights</h1>
+  <div class="flex flex-col ml-5 mr-5 sm:ml-16 sm:mr-16 mt-24">
+    <h1 class="text-3xl sm:text-4xl mb-5 font-medium">college highlights</h1>
     <div class="flex flex-wrap">
       {#each college_highlights as highlight}
         <div class="w-full sm:w-1/3 p-1 mb-1">
@@ -121,10 +121,10 @@
   </div>
 
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 gap-8 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24"
+    class="grid grid-cols-1 sm:grid-cols-2 gap-8 ml-5 mr-5 sm:ml-16 sm:mr-16 mt-24"
     id="projects"
   >
-    <h1 class="col-span-1 sm:col-span-2 text-4xl">projects</h1>
+    <h1 class="col-span-1 sm:col-span-2 text-4xl font-medium">projects</h1>
     {#each projects as project}
       <div class="relative group mb-8">
         <div class="flex flex-row justify-between">
@@ -145,9 +145,9 @@
     {/each}
   </div>
 
-  <div class="text-center mt-16 m-5">
-    <p class="text-md mb-2">
-      thank you for making it this far! here is a song recommendation for you:
+  <div class="text-center mt-16 m-3">
+    <p class="text-lg mb-2">
+      thank you for making it this far, here is a song recommendation for you!
     </p>
     <iframe
       style="border-radius:12px; display:block; margin:auto;"
