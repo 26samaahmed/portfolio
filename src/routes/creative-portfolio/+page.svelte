@@ -71,7 +71,7 @@
 </script>
 
 <svelte:head>
-  <title>Design Portfolio - Sama Ahmed</title>
+  <title>Creative Portfolio - Sama Ahmed</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -145,6 +145,46 @@
     {/each}
   </div>
 
+  <div
+    class="relative rounded border-white border-2 ml-5 mr-5 sm:ml-16 sm:mr-16 mt-40 pt-8 px-4 pb-4"
+  >
+    <div class="absolute -top-6 left-4 flex items-center">
+      <h1 class="bg-black px-3 text-4xl whitespace-nowrap">જ⁀➴ about me</h1>
+    </div>
+
+    <section class="text-xl sm:text-2xl">
+      <p>
+        i’m an aspiring product designer with a love for creating intuitive,
+        user-friendly web apps. my design journey started during my sophomore
+        year, when i joined the design team for my college’s annual hackathon,
+        fullyhacks 2024. that experience sparked my interest in crafting
+        interfaces that not only look good, but feel seamless to use.
+      </p>
+      <br />
+      <p>
+        i’ve always been drawn to art, and design has become one of my favorite
+        ways to express creativity. over time, i began exploring the world of
+        designathons, where i collaborated with other designers to build
+        projects in under 24 hours. i’ve participated in events like createsc
+        2024 (usc), gator user design 2024 (uf), and vista 2024 (ucla). at
+        createsc, which was only my second designathon, my team and i made it to
+        the top 15 finalists.
+      </p>
+      <br />
+      <p>
+        inspired by that experience, my friends and i decided to organize our
+        own: fullybeyond 2024, the first designathon hosted by a csu. with my
+        background in frontend development, i led the website’s development.
+        after six months of planning, we successfully launched the event and
+        received 100+ applicants. it was one of the most meaningful moments of
+        my college experience, and it reminded me how much i love working with
+        others to bring ideas to life. i’m now interning as a user experience researcher
+        at lpl financial in san diego to explore how user insights can shape stronger, 
+        more meaningful designs. my goal is to keep building experiences that truly connect.
+      </p>
+    </section>
+  </div>
+
   <div class="text-center mt-16 m-3">
     <p class="text-lg mb-2">
       thank you for making it this far, here is a song recommendation for you!
@@ -162,8 +202,12 @@
     >
     </iframe>
   </div>
-  <p class="text-center text-md md:text-lg">made with 💚 by sama ahmed</p>
-  <p class="text-center text-md">all rights reserved © 2025</p>
+  <p class="text-center text-md md:text-lg">
+    made with <span class="text-sm">💚</span> by sama ahmed
+  </p>
+  <p class="text-center text-md md:text-lg -mt-2">
+    all rights reserved © 2025
+  </p>
 </main>
 
 <style>

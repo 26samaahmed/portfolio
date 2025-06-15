@@ -70,8 +70,8 @@
 
       <div class="flex flex-row items-center space-x-3 mt-3">
         <h3 class="text-white text-md sm:text-xl">
-          <a href="/design-portfolio" class="redirect-design"
-            >view design portfolio</a
+          <a href="/creative-portfolio" class="redirect-design"
+            >view creative portfolio</a
           >
         </h3>
         <svg
@@ -106,17 +106,17 @@
     class="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-full flex justify-center"
   >
     <p class="text-center text-md md:text-xl text-white md:text-black">
-      made with 💚 <span class="md:text-white">by sama ahmed</span>
+      made with <span class="text-sm">💚</span>b<span class="md:text-white"
+        >y sama ahmed</span
+      >
     </p>
   </div>
 
   <div
     class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full flex justify-center"
   >
-    <p class="text-center text-md text-white md:text-black">
-      all rights res<span class="text-center text-md text-white"
-        >erved © 2025</span
-      >
+    <p class="text-center text-md md:text-xl text-white md:text-black">
+      all rights res<span class="text-white">erved © 2025</span>
     </p>
   </div>
 </main>

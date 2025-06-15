@@ -212,8 +212,8 @@
         helped attract over 250 participants. i also co-led the open source team
         and served as webmaster during the 2024–2025 academic year, teaching
         students about open source tools and helping them contribute to
-        projects. i’m currently interning as a ux researcher at lpl financial in
-        san diego.
+        projects. i’m currently interning as a user experience researcher at lpl
+        financial in san diego.
       </p>
       <br />
       <p>
@@ -241,8 +241,12 @@
     >
     </iframe>
   </div>
-  <p class="text-center text-md md:text-lg">made with 💚 by sama ahmed</p>
-  <p class="text-center text-md">all rights reserved © 2025</p>
+  <p class="text-center text-md md:text-lg">
+    made with <span class="text-sm">💚</span> by sama ahmed
+  </p>
+  <p class="text-center text-md md:text-lg -mt-2">
+    all rights reserved © 2025
+  </p>
 </main>
 
 <style>

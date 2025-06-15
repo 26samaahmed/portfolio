@@ -15,7 +15,7 @@
 </script>
 
 <main>
-  <nav class="flex mr-5 ml-5 sm:ml-10 sm:mr-10 text-black mt-7 items-center">
+  <nav class="flex mr-5 ml-5 sm:ml-16 sm:mr-16 text-black mt-7 items-center">
     <div class="flex-1 justify-start space-x-3 sm:space-x-5">
       <a
         href="https://www.linkedin.com/in/sama-ahmedd/"
