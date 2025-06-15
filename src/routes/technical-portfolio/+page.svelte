@@ -61,7 +61,7 @@
       link: "https://github.com/26samaahmed/fullybeyond",
       teck_stack: ["sveltekit", "tailwindcss"],
       description:
-        "☆ the official site for csuf’s first student-led designathon, built with a team of 4. it features the event schedule, judges, sponsors, and more.",
+        "☆ the official site for csuf’s first student-led designathon, built with a team of 4. it features the event schedule, sponsors, and more.",
     },
     {
       name: "acmcsuf.com",
@@ -207,19 +207,19 @@
       <p>
         currently, i’m a rising senior at cal state fullerton majoring in
         computer science. since my sophomore year, i’ve been actively involved
-        in the largest tech club on campus, taking on leadership roles like
-        co-directing fullyhacks 2025, where i led 50+ organizers and helped
-        attract over 250 participants. i also co-led the open source team and
-        served as webmaster during the 2024–2025 academic year, teaching
+        in acm at csuf, the largest tech club on campus, taking on leadership
+        roles like co-directing fullyhacks 2025, where i led 50+ organizers and
+        helped attract over 250 participants. i also co-led the open source team
+        and served as webmaster during the 2024–2025 academic year, teaching
         students about open source tools and helping them contribute to
-        projects. i am currently interning as a ux researcher at lpl financial
-        in san diego.
+        projects. i’m currently interning as a ux researcher at lpl financial in
+        san diego.
       </p>
       <br />
       <p>
         outside of tech, i enjoy watching k-dramas, listening to music, and
         designing websites. in 2024, i had the amazing experience of seeing my
-        favorite artists, ateez, live in concert ⋆ 𐙚 ̊.
+        favorite artists, ateez and txt, live in concert ⋆ 𐙚 ̊.
       </p>
     </section>
   </div>
