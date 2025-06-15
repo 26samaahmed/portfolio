@@ -103,10 +103,20 @@
 
   <!-- Footer -->
   <div
-    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full flex justify-center"
+    class="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-full flex justify-center"
   >
     <p class="text-center text-md md:text-xl text-white md:text-black">
       made with 💚 <span class="md:text-white">by sama ahmed</span>
+    </p>
+  </div>
+
+  <div
+    class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full flex justify-center"
+  >
+    <p class="text-center text-md text-white md:text-black">
+      all rights res<span class="text-center text-md text-white"
+        >erved © 2025</span
+      >
     </p>
   </div>
 </main>

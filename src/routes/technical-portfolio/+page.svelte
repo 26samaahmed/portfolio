@@ -241,9 +241,8 @@
     >
     </iframe>
   </div>
-  <p class="text-center text-md md:text-lg text-black">
-    made with 💚 by sama ahmed
-  </p>
+  <p class="text-center text-md md:text-lg">made with 💚 by sama ahmed</p>
+  <p class="text-center text-md">all rights reserved © 2025</p>
 </main>
 
 <style>
