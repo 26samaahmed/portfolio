@@ -47,28 +47,28 @@
         "spotify api",
       ],
       description:
-        "☆ a website where the current temperature is displayed and songs of the hour are recommended for people to listen to. The lower the temperature, the calmer the music. If the temperature is high, then upbeat music will be recommended",
+        "☆ a web app that displays the current temperature and recommends songs to match the weather — chill tracks for colder days, upbeat ones for the heat.",
     },
     {
       name: "concert tracker",
       link: "https://github.com/26samaahmed/concert-tracker",
       teck_stack: ["sveltekit", "ticketmaster api"],
       description:
-        "☆ a website where users can search for concerts by city name and month and see the upcoming concerts in that city",
+        "☆ a website where users can search for concerts by city and month, and explore upcoming events happening in that location.",
     },
     {
       name: "fullybeyond",
       link: "https://github.com/26samaahmed/fullybeyond",
       teck_stack: ["sveltekit", "tailwindcss"],
       description:
-        "☆ a website for csuf's first student-led designathon that shows information about the event like the schedule, sponsors, and judges developed with 4 other team members",
+        "☆ the official site for csuf’s first student-led designathon, built with a team of 4. it features the event schedule, judges, sponsors, and more.",
     },
     {
       name: "acmcsuf.com",
       link: "https://github.com/26samaahmed/acmcsuf.com",
       teck_stack: ["sveltekit", "typescript"],
       description:
-        "☆ a website for the association for computing machinery at california state university, fullerton with 70+ contributers that shows information about the club, events, and resources",
+        "☆ the official website for csuf’s acm chapter, built with 70+ contributors. it highlights club info, events, and resources for members.",
     },
     {
       name: "playlist exporter",
@@ -82,7 +82,7 @@
         "youtube api",
       ],
       description:
-        "☆ a website where users can export their spotify playlists to youtube playlists",
+        "☆ a tool that lets users convert and export their spotify playlists directly to youtube playlists.",
     },
   ];
 </script>
@@ -124,8 +124,8 @@
     </h2>
   </div>
 
-  <div class="flex flex-col ml-5 mr-16 sm:ml-16 sm:mr-15 mt-24">
-    <h1 class="text-3xl sm:text-4xl mb-5 font-medium">college highlights</h1>
+  <div class="flex flex-col ml-5 mr-5 sm:ml-16 sm:mr-16 mt-24">
+    <h1 class="text-3xl sm:text-4xl mb-5">college highlights</h1>
     <div class="flex flex-wrap">
       {#each college_highlights as highlight}
         <div class="w-full sm:w-1/3 p-1 mb-1">
@@ -139,37 +139,41 @@
     </div>
   </div>
 
-  <div class="ml-5 mr-5 sm:ml-16 sm:mr-16 mt-16" id="projects">
-    <h1 class="text-4xl text-black mb-2 font-medium">projects</h1>
+  <div class="ml-5 mr-5 sm:ml-16 sm:mr-16 mt-24" id="projects">
+    <h1 class="text-4xl text-black mb-2">projects</h1>
     <div class="flex flex-wrap -mx-2">
       {#each projects as project}
-        <div class="w-full sm:w-1/2 lg:w-1/3 px-2">
+        <div class="w-full sm:w-1/2 lg:w-1/3 pb-8 px-2">
           <div
-            class="flex flex-col relative rounded border-black border-2 h-72 mt-10 pt-6 px-4"
+            class="flex flex-col relative rounded border-black border-2 mt-10 pt-6 px-4 h-full min-h-[10rem] sm:min-h-[10rem]"
           >
             <div
               class="md:flex md:justify-between items-center absolute -top-4 left-4"
             >
-              <h2 class="text-2xl bg-white px-3">{project.name}</h2>
+              <h2 class="text-2xl bg-white px-3 max-w-full break-words">
+                {project.name}
+              </h2>
             </div>
 
             <p class="mb-2 text-lg">{project.description}</p>
             <div class="flex flex-wrap gap-2 mb-2">
               {#each project.teck_stack as stack}
                 <p
-                  class="bg-black text-sm text-white rounded-lg w-32 text-center"
+                  class="bg-black text-sm text-white rounded-lg px-3 py-1 text-center whitespace-nowrap"
                 >
                   {stack}
                 </p>
               {/each}
             </div>
 
-            <a
-              href={project.link}
-              target="_blank"
-              class="text-lg text-blue-500 border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out w-24 text-center"
-              >view project</a
-            >
+            <div class="mt-auto mb-2">
+              <a
+                href={project.link}
+                target="_blank"
+                class="text-lg text-blue-500 border-b-2 border-transparent hover:border-current transition duration-300 ease-in-out text-center"
+                >view project</a
+              >
+            </div>
           </div>
         </div>
       {/each}
@@ -187,9 +191,7 @@
     class="relative rounded border-black border-2 ml-5 mr-5 sm:ml-16 sm:mr-16 mt-40 pt-8 px-4 pb-4"
   >
     <div class="absolute -top-6 left-4 flex items-center">
-      <h1 class="bg-white px-3 text-4xl font-medium whitespace-nowrap">
-        જ⁀➴ more about me
-      </h1>
+      <h1 class="bg-white px-3 text-4xl whitespace-nowrap">જ⁀➴ about me</h1>
     </div>
 
     <section class="text-xl sm:text-2xl">
@@ -210,7 +212,8 @@
         attract over 250 participants. i also co-led the open source team and
         served as webmaster during the 2024–2025 academic year, teaching
         students about open source tools and helping them contribute to
-        projects.
+        projects. i am currently interning as a ux researcher at lpl financial
+        in san diego.
       </p>
       <br />
       <p>
