@@ -4,6 +4,8 @@
   import college_highlight2 from "$lib/assets/college_highlight2.jpg";
   import college_highlight13 from "$lib/assets/college_highlight13.jpg";
   import college_highlight8 from "$lib/assets/college_highlight8.jpg";
+  import college_highlight7 from "$lib/assets/college_highlight7.jpg";
+  import college_highlight10 from "$lib/assets/college_highlight10.jpg";
   import project1 from "$lib/assets/design_project1.png";
   import project2 from "$lib/assets/design_project2.png";
   import project3 from "$lib/assets/design_project3.png";
@@ -12,19 +14,27 @@
   let college_highlights = [
     {
       img: college_highlight2,
-      title: "First Design workshop",
+      title: "College Highlight 2",
     },
     {
       img: college_highlight4,
-      title: "Portfolio Competition with 25+ submissions",
+      title: "College Highlight 4",
     },
     {
       img: college_highlight8,
-      title: "CSUF's first student-run designathon",
+      title: "College Highlight 8",
     },
     {
       img: college_highlight13,
-      title: "Designathon 101 Workshop",
+      title: "College Highlight 13",
+    },
+    {
+      img: college_highlight7,
+      title: "College Highlight 7",
+    },
+    {
+      img: college_highlight10,
+      title: "College Highlight 10",
     },
   ];
 
@@ -96,14 +106,14 @@
   </div>
 
   <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24">
-    <h1 class="text-3xl sm:text-5xl mb-5">college highlights</h1>
+    <h1 class="text-3xl sm:text-4xl mb-5">college highlights</h1>
     <div class="flex flex-wrap">
       {#each college_highlights as highlight}
-        <div class="w-full sm:w-1/2 p-2 mb-2">
+        <div class="w-full sm:w-1/3 p-1 mb-1">
           <img
             src={highlight.img}
             alt={highlight.title}
-            class="rounded-sm h-64 lg:h-96 w-full object-cover saturate-0 hover:saturate-100 transition-all duration-400"
+            class="rounded-sm h-64 lg:h-64 w-full object-cover saturate-0 hover:saturate-100 transition-all duration-400"
           />
         </div>
       {/each}
@@ -111,10 +121,10 @@
   </div>
 
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 gap-12 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24"
+    class="grid grid-cols-1 sm:grid-cols-2 gap-8 ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24"
     id="projects"
   >
-    <h1 class="col-span-1 sm:col-span-2 text-5xl">projects</h1>
+    <h1 class="col-span-1 sm:col-span-2 text-4xl">projects</h1>
     {#each projects as project}
       <div class="relative group mb-8">
         <div class="flex flex-row justify-between">
@@ -127,7 +137,7 @@
           class="rounded-md w-full h-full object-cover"
         />
         <p
-          class="description text-md sm:text-lg m-5 text-white absolute inset-0 flex items-center text-center justify-center opacity-0"
+          class="description text-md sm:text-lg m-4 text-white absolute inset-0 flex items-center text-center justify-center opacity-0"
         >
           {project.description}
         </p>

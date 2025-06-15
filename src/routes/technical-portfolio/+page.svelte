@@ -4,6 +4,8 @@
   import college_highlight5 from "$lib/assets/college_highlight5.jpg";
   import college_highlight9 from "$lib/assets/college_highlight9.jpg";
   import college_highlight12 from "$lib/assets/college_highlight12.jpg";
+  import college_highlight1 from "$lib/assets/college_highlight1.jpg";
+  import college_highlight6 from "$lib/assets/college_highlight6.jpg";
 
   let college_highlights = [
     {
@@ -21,6 +23,14 @@
     {
       img: college_highlight9,
       title: "College Highlight 9",
+    },
+    {
+      img: college_highlight6,
+      title: "College Highlight 6",
+    },
+    {
+      img: college_highlight1,
+      title: "College Highlight 1",
     },
   ];
 
@@ -115,14 +125,14 @@
   </div>
 
   <div class="flex flex-col ml-5 mr-5 sm:ml-10 sm:mr-10 mt-24">
-    <h1 class="text-3xl sm:text-5xl mb-5">college highlights</h1>
+    <h1 class="text-3xl sm:text-4xl mb-5">college highlights</h1>
     <div class="flex flex-wrap">
       {#each college_highlights as highlight}
-        <div class="w-full sm:w-1/2 p-2 mb-2">
+        <div class="w-full sm:w-1/3 p-1 mb-1">
           <img
             src={highlight.img}
             alt={highlight.title}
-            class="rounded-sm h-64 lg:h-96 w-full object-cover saturate-0 hover:saturate-100 transition-all duration-400"
+            class="rounded-sm h-64 lg:h-64 w-full object-cover saturate-0 hover:saturate-100 transition-all duration-400"
           />
         </div>
       {/each}
@@ -130,7 +140,7 @@
   </div>
 
   <div class="ml-5 mr-5 sm:ml-10 sm:mr-10 mt-16" id="projects">
-    <h1 class="text-5xl text-black mb-5">projects</h1>
+    <h1 class="text-4xl text-black mb-5">projects</h1>
     <div class="flex flex-wrap -mx-2">
       {#each projects as project}
         <div class="w-full sm:w-1/2 lg:w-1/3 px-2 mb-7">
