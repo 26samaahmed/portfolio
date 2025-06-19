@@ -1,5 +1,5 @@
 <script>
-  import NavBar from "../../components/DesignNavBar.svelte";
+  import NavBar from "../../components/Creative_NavBar.svelte";
   import college_highlight4 from "$lib/assets/college_highlight4.jpg";
   import college_highlight2 from "$lib/assets/college_highlight2.jpg";
   import college_highlight13 from "$lib/assets/college_highlight13.jpg";
