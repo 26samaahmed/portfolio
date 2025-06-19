@@ -2,6 +2,7 @@
   export let buttons = {};
   export let icons = {};
   export let icon_color = "";
+  export let underlineColor = "#";
 
   function scrollIntoView({ target }) {
     const el = document.querySelector(target.getAttribute("href"));
@@ -42,38 +43,20 @@
         {#if button.link === "#projects"}
           <a
             href={button.link}
+            style="--underline-color: {underlineColor};"
             on:click|preventDefault={scrollIntoView}
-            class="buttons text:lg sm:text-3xl">{button.name}</a
+            class="text-lg sm:text-3xl inline-block relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-[var(--underline-color)] after:bottom-0 after:left-0 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[250ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left">{button.name}</a
           >
         {:else}
-          <a href={button.link} class="buttons text:lg sm:text-3xl"
-            >{button.name}</a
+          <a
+            href={button.link}
+            style="--underline-color: {underlineColor};"
+            class="text-lg sm:text-3xl inline-block relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-[var(--underline-color)] after:bottom-0 after:left-0 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[250ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left"
           >
+            {button.name}
+          </a>
         {/if}
       {/each}
     </div>
   </nav>
 </main>
-
-<style>
-  .buttons {
-    display: inline-block;
-    position: relative;
-  }
-  .buttons::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    background-color: #000000;
-    bottom: 0;
-    left: 0;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-  .buttons:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-</style>

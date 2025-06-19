@@ -1,11 +1,16 @@
 <script>
-  import NavBar from "../../components/Creative_NavBar.svelte";
-  import college_highlight4 from "$lib/assets/college_highlight4.jpg";
-  import college_highlight2 from "$lib/assets/college_highlight2.jpg";
-  import college_highlight13 from "$lib/assets/college_highlight13.jpg";
-  import college_highlight8 from "$lib/assets/college_highlight8.jpg";
-  import college_highlight7 from "$lib/assets/college_highlight7.jpg";
-  import college_highlight10 from "$lib/assets/college_highlight10.jpg";
+  import NavBar from "../../components/NavBar/Creative_NavBar.svelte";
+  import Gallery from "../../components/Gallery/gallery.svelte";
+  
+  import highlight_7 from "$lib/assets/highlight_7.jpg";
+  import highlight_8 from "$lib/assets/highlight_8.jpg";
+  import highlight_9 from "$lib/assets/highlight_9.jpg";
+  import highlight_10 from "$lib/assets/highlight_10.jpg";
+  import highlight_11 from "$lib/assets/highlight_11.jpg";
+  import highlight_12 from "$lib/assets/highlight_12.jpg";
+
+
+
   import project1 from "$lib/assets/design_project1.png";
   import project2 from "$lib/assets/design_project2.png";
   import project3 from "$lib/assets/design_project3.png";
@@ -13,28 +18,28 @@
 
   let college_highlights = [
     {
-      img: college_highlight2,
-      title: "College Highlight 2",
-    },
-    {
-      img: college_highlight4,
-      title: "College Highlight 4",
-    },
-    {
-      img: college_highlight8,
-      title: "College Highlight 8",
-    },
-    {
-      img: college_highlight13,
-      title: "College Highlight 13",
-    },
-    {
-      img: college_highlight7,
+      img: highlight_7,
       title: "College Highlight 7",
     },
     {
-      img: college_highlight10,
+      img: highlight_8,
+      title: "College Highlight 8",
+    },
+    {
+      img: highlight_9,
+      title: "College Highlight 9",
+    },
+    {
+      img: highlight_10,
       title: "College Highlight 10",
+    },
+    {
+      img: highlight_11,
+      title: "College Highlight 11",
+    },
+    {
+      img: highlight_12,
+      title: "College Highlight 12",
     },
   ];
 
@@ -105,20 +110,7 @@
     </h2>
   </div>
 
-  <div class="flex flex-col ml-5 mr-5 sm:ml-16 sm:mr-16 mt-24">
-    <h1 class="text-3xl sm:text-4xl mb-5">college highlights</h1>
-    <div class="flex flex-wrap">
-      {#each college_highlights as highlight}
-        <div class="w-full sm:w-1/3 p-1 mb-1">
-          <img
-            src={highlight.img}
-            alt={highlight.title}
-            class="rounded-sm h-64 lg:h-64 w-full object-cover saturate-0 hover:saturate-100 transition-all duration-400"
-          />
-        </div>
-      {/each}
-    </div>
-  </div>
+  <Gallery {college_highlights} />
 
   <div
     class="grid grid-cols-1 sm:grid-cols-2 gap-8 ml-5 mr-5 sm:ml-16 sm:mr-16 mt-24"

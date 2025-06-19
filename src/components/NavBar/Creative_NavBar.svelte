@@ -1,5 +1,5 @@
 <script>
-  import NavigationBar from "./NavigationBar.svelte";
+  import NavigationBar from "./NavBar.svelte";
   let buttons = [
     { name: "home", link: "/" },
     { name: "projects", link: "#projects" },
@@ -23,4 +23,4 @@
   let icon_color = "#FFFFFF";
 </script>
 
-<NavigationBar {buttons} {icons} icon_color={icon_color} />
+<NavigationBar {buttons} {icons} icon_color={icon_color} underlineColor= {icon_color} />
