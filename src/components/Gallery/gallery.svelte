@@ -10,7 +10,7 @@
         <img
           src={highlight.img}
           alt={highlight.title}
-          class="rounded-sm h-64 lg:h-64 w-full object-cover saturate-0 hover:saturate-100 transition-all duration-400"
+          class="rounded-sm h-64 lg:h-64 w-full object-cover saturate-0 hover:saturate-100 transition-all duration-450"
         />
       </div>
     {/each}

@@ -1,15 +1,14 @@
 <script>
   import NavBar from "../../components/NavBar/Creative_NavBar.svelte";
-  import Gallery from "../../components/Gallery/gallery.svelte";
-  
+  import Gallery from "../../components/Gallery/Gallery.svelte";
+  import Footer from "../../components/Footer/Footer.svelte";
+
   import highlight_7 from "$lib/assets/highlight_7.jpg";
   import highlight_8 from "$lib/assets/highlight_8.jpg";
   import highlight_9 from "$lib/assets/highlight_9.jpg";
   import highlight_10 from "$lib/assets/highlight_10.jpg";
   import highlight_11 from "$lib/assets/highlight_11.jpg";
   import highlight_12 from "$lib/assets/highlight_12.jpg";
-
-
 
   import project1 from "$lib/assets/design_project1.png";
   import project2 from "$lib/assets/design_project2.png";
@@ -73,6 +72,9 @@
       date: "may 2024",
     },
   ];
+
+  let song_url =
+    "https://open.spotify.com/embed/track/0xtIp0lgccN85GfGOekS5L?utm_source=generator";
 </script>
 
 <svelte:head>
@@ -85,7 +87,7 @@
   />
 </svelte:head>
 
-<main>
+<body class="bg-black text-white">
   <NavBar />
   <div
     class="flex flex-col rounded-md mr-5 ml-5 sm:ml-16 sm:mr-16 sm:pt-28 md:pb-64"
@@ -114,22 +116,21 @@
 
   <div
     class="grid grid-cols-1 sm:grid-cols-2 gap-8 ml-5 mr-5 sm:ml-16 sm:mr-16 mt-24"
-    id="projects"
   >
     <h1 class="col-span-1 sm:col-span-2 text-4xl">projects</h1>
     {#each projects as project}
-      <div class="relative group mb-8">
+      <div class="relative mb-8 group">
         <div class="flex flex-row justify-between">
           <h2 class="text-lg sm:text-2xl mb-2">{project.name}</h2>
           <p class="text-lg sm:text-2xl mb-2">{project.date}</p>
         </div>
         <img
           src={project.image}
-          alt="project 2"
-          class="rounded-md w-full h-full object-cover"
+          alt="project"
+          class="rounded-md w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-20"
         />
         <p
-          class="description text-md sm:text-lg m-4 text-white absolute inset-0 flex items-center text-center justify-center opacity-0"
+          class="text-md sm:text-lg m-4 text-white absolute inset-0 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         >
           {project.description}
         </p>
@@ -170,54 +171,19 @@
         after six months of planning, we successfully launched the event and
         received 100+ applicants. it was one of the most meaningful moments of
         my college experience, and it reminded me how much i love working with
-        others to bring ideas to life. i’m now interning as a user experience researcher
-        at lpl financial in san diego to explore how user insights can shape stronger, 
-        more meaningful designs. my goal is to keep building experiences that truly connect.
+        others to bring ideas to life. i’m now interning as a user experience
+        researcher at lpl financial in san diego to explore how user insights
+        can shape stronger, more meaningful designs. my goal is to keep building
+        experiences that truly connect.
       </p>
     </section>
   </div>
 
-  <div class="text-center mt-16 m-3">
-    <p class="text-lg mb-2">
-      thank you for making it this far, here is a song recommendation for you!
-    </p>
-    <iframe
-      style="border-radius:12px; display:block; margin:auto;"
-      class="w-full sm:w-96"
-      src="https://open.spotify.com/embed/track/0xtIp0lgccN85GfGOekS5L?utm_source=generator"
-      height="100"
-      frameBorder="0"
-      allowfullscreen
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-      title="Spotify Song Player"
-    >
-    </iframe>
-  </div>
-  <p class="text-center text-md md:text-lg">
-    made with <span class="text-sm">💚</span> by sama ahmed
-  </p>
-  <p class="text-center text-md md:text-lg -mt-2">
-    all rights reserved © 2025
-  </p>
-</main>
+  <Footer {song_url} />
+</body>
 
 <style>
   :global(body) {
-    background-color: black;
-    color: white;
     font-family: "Alegreya Sans SC", sans-serif;
-  }
-
-  .group img {
-    transition: 0.5s;
-  }
-
-  .group:hover img {
-    opacity: 0.2;
-  }
-
-  .group:hover .description {
-    opacity: 1;
   }
 </style>

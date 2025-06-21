@@ -1,6 +1,8 @@
 <script>
   import NavBar from "../../components/NavBar/Technical_NavBar.svelte";
-  import Gallery from "../../components/Gallery/gallery.svelte";
+  import Gallery from "../../components/Gallery/Gallery.svelte";
+  import Footer from "../../components/Footer/Footer.svelte";
+
   import highlight_1 from "$lib/assets/highlight_1.jpg";
   import hightlight_2 from "$lib/assets/highlight_2.jpg";
   import hightlight_3 from "$lib/assets/highlight_3.jpg";
@@ -87,6 +89,8 @@
         "☆ a tool that lets users convert and export their spotify playlists directly to youtube playlists.",
     },
   ];
+
+  let song_url = "https://open.spotify.com/embed/track/54Z2Nr6JA67vqyNAWVYlBD?utm_source=generator"
 </script>
 
 <svelte:head>
@@ -99,7 +103,7 @@
   />
 </svelte:head>
 
-<main>
+<body class="bg-white text-black">
   <NavBar />
   <div
     class="flex flex-col rounded-md mr-5 ml-5 sm:ml-16 sm:mr-16 sm:pt-28 md:pb-64 text-center"
@@ -213,35 +217,11 @@
     </section>
   </div>
 
-  <div class="text-center mt-16 m-3">
-    <p class="text-lg mb-2">
-      thank you for making it this far, here is a song recommendation for you!
-    </p>
-    <iframe
-      style="border-radius:12px; display:block; margin:auto;"
-      class="w-full sm:w-96"
-      src="https://open.spotify.com/embed/track/54Z2Nr6JA67vqyNAWVYlBD?utm_source=generator"
-      height="100"
-      frameBorder="0"
-      allowfullscreen
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-      title="Spotify Song Player"
-    >
-    </iframe>
-  </div>
-  <p class="text-center text-md md:text-lg">
-    made with <span class="text-sm">💚</span> by sama ahmed
-  </p>
-  <p class="text-center text-md md:text-lg -mt-2">
-    all rights reserved © 2025
-  </p>
-</main>
+  <Footer song_url={song_url} />
+</body>
 
 <style>
   :global(body) {
-    background-color: white;
-    color: black;
     font-family: "Alegreya Sans SC", sans-serif;
   }
 </style>
