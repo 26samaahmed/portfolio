@@ -46,28 +46,28 @@
     {
       name: "moaverse",
       description:
-        "a website for a txt, a k-pop group, that displays information about the group and their music",
+        "a website for txt, a k-pop group, that showcases information about the members and their music in an interactive way",
       image: project4,
       date: "april 2024",
     },
     {
       name: "aura",
       description:
-        "a mobile app dedicated for deaf people to feel music in a different way through visuals made by people with color synthesia",
+        "a mobile app that reimagines how deaf individuals experience music — using visuals created by people with color synesthesia",
       image: project2,
       date: "april 2024",
     },
     {
       name: "fishtank",
       description:
-        "a mobile app that allows for students in college to meet new friends by joining activities happening on campus",
+        "an ai-powered app that curates local events based on user prompts and interests — designed to foster connection and well-being among college students",
       image: project3,
       date: "april 2024",
     },
     {
       name: "e-go",
       description:
-        "a mobile app that helps people that need a ride without having to search on multiple platforms",
+        "a mobile app that helps students find convenient, affordable rides by integrating public transportation options and offering rewards for using them",
       image: project1,
       date: "may 2024",
     },
