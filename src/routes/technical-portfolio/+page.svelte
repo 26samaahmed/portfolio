@@ -12,7 +12,7 @@
 
   let college_highlights = [
     {
-     img: highlight_1,
+      img: highlight_1,
       title: "College Highlight 1",
     },
     {
@@ -36,7 +36,6 @@
       title: "College Highlight 6",
     },
   ];
-
 
   let projects = [
     {
@@ -90,7 +89,8 @@
     },
   ];
 
-  let song_url = "https://open.spotify.com/embed/track/54Z2Nr6JA67vqyNAWVYlBD?utm_source=generator"
+  let song_url =
+    "https://open.spotify.com/embed/track/6Stw2SepJwrkjT60fusHxR?utm_source=generator";
 </script>
 
 <svelte:head>
@@ -217,7 +217,7 @@
     </section>
   </div>
 
-  <Footer song_url={song_url} />
+  <Footer {song_url} />
 </body>
 
 <style>

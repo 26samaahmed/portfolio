@@ -74,7 +74,7 @@
   ];
 
   let song_url =
-    "https://open.spotify.com/embed/track/0xtIp0lgccN85GfGOekS5L?utm_source=generator";
+    "https://open.spotify.com/embed/track/19kHhX6f6EfLU7rcO3RqjO?utm_source=generator";
 </script>
 
 <svelte:head>

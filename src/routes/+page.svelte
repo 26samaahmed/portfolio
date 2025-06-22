@@ -102,7 +102,7 @@
     class="absolute bottom-5 left-1/2 transform -translate-x-1/2 w-full flex justify-center"
   >
     <p class="text-center text-md md:text-xl text-white md:text-black">
-      made with <span class="text-sm">💚</span>b<span class="md:text-white"
+      made with <span class="text-sm">💚</span> b<span class="md:text-white"
         >y sama ahmed</span
       >
     </p>
