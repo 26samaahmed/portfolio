@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/design-gallery/:path*",
+      "destination": "https://design-record.vercel.app/:path*"
+    }
+  ]
+}
