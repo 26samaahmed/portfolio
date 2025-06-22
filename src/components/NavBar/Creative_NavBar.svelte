@@ -1,10 +1,18 @@
 <script>
   import NavigationBar from "./NavBar.svelte";
   let buttons = [
-    { name: "home", link: "/"},
+    { name: "home", link: "/" },
     { name: "projects", link: "#projects" },
-    { name: "gallery", link: "https://design-record.vercel.app/", target: "_blank"  },
-    { name: "resume", link: "/Sama_Ahmed_Design_2024_Resume.pdf", target: "_blank" }
+    {
+      name: "gallery",
+      link: "https://www.samahmed.info/design-gallery",
+      target: "_blank",
+    },
+    {
+      name: "resume",
+      link: "/Sama_Ahmed_Design_2024_Resume.pdf",
+      target: "_blank",
+    },
   ];
 
   let icons = [
