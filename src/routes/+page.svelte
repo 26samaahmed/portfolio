@@ -1,7 +1,3 @@
-<script>
-  let email = "ssama5336@gmail.com";
-</script>
-
 <svelte:head>
   <title>Sama Ahmed's Portfolio</title>
   <meta name="description" content="Sama Ahmed's Portfolio, 2025" />
@@ -56,7 +52,7 @@
           />
         </svg>
         <h3 class="text-black text-md sm:text-xl">
-          <a href="/technical-portfolio" class="redirect-technical"
+          <a href="/technical-portfolio" class="inline-block relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-black after:bottom-0 after:left-0 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[250ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left"
             >view technical portfolio</a
           >
         </h3>
@@ -70,7 +66,7 @@
 
       <div class="flex flex-row items-center space-x-3 mt-3">
         <h3 class="text-white text-md sm:text-xl">
-          <a href="/creative-portfolio" class="redirect-design"
+          <a href="/creative-portfolio" class="inline-block relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-white after:bottom-0 after:left-0 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[250ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left"
             >view creative portfolio</a
           >
         </h3>
@@ -134,33 +130,4 @@
     color: white;
   }
 
-  .redirect-design,
-  .redirect-technical {
-    display: inline-block;
-    position: relative;
-  }
-
-  .redirect-design::after,
-  .redirect-technical::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-  }
-
-  .redirect-technical::after {
-    background-color: black;
-  }
-
-  .redirect-design:hover::after,
-  .redirect-technical:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
 </style>

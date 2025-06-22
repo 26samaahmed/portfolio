@@ -1,11 +1,15 @@
 <script>
-  import NavBar from "../../components/DesignNavBar.svelte";
-  import college_highlight4 from "$lib/assets/college_highlight4.jpg";
-  import college_highlight2 from "$lib/assets/college_highlight2.jpg";
-  import college_highlight13 from "$lib/assets/college_highlight13.jpg";
-  import college_highlight8 from "$lib/assets/college_highlight8.jpg";
-  import college_highlight7 from "$lib/assets/college_highlight7.jpg";
-  import college_highlight10 from "$lib/assets/college_highlight10.jpg";
+  import NavBar from "../../components/NavBar/Creative_NavBar.svelte";
+  import Gallery from "../../components/Gallery/Gallery.svelte";
+  import Footer from "../../components/Footer/Footer.svelte";
+
+  import highlight_7 from "$lib/assets/highlight_7.jpg";
+  import highlight_8 from "$lib/assets/highlight_8.jpg";
+  import highlight_9 from "$lib/assets/highlight_9.jpg";
+  import highlight_10 from "$lib/assets/highlight_10.jpg";
+  import highlight_11 from "$lib/assets/highlight_11.jpg";
+  import highlight_12 from "$lib/assets/highlight_12.jpg";
+
   import project1 from "$lib/assets/design_project1.png";
   import project2 from "$lib/assets/design_project2.png";
   import project3 from "$lib/assets/design_project3.png";
@@ -13,28 +17,28 @@
 
   let college_highlights = [
     {
-      img: college_highlight2,
-      title: "College Highlight 2",
-    },
-    {
-      img: college_highlight4,
-      title: "College Highlight 4",
-    },
-    {
-      img: college_highlight8,
-      title: "College Highlight 8",
-    },
-    {
-      img: college_highlight13,
-      title: "College Highlight 13",
-    },
-    {
-      img: college_highlight7,
+      img: highlight_7,
       title: "College Highlight 7",
     },
     {
-      img: college_highlight10,
+      img: highlight_8,
+      title: "College Highlight 8",
+    },
+    {
+      img: highlight_9,
+      title: "College Highlight 9",
+    },
+    {
+      img: highlight_10,
       title: "College Highlight 10",
+    },
+    {
+      img: highlight_11,
+      title: "College Highlight 11",
+    },
+    {
+      img: highlight_12,
+      title: "College Highlight 12",
     },
   ];
 
@@ -42,32 +46,35 @@
     {
       name: "moaverse",
       description:
-        "a website for a txt, a k-pop group, that displays information about the group and their music",
+        "a website for txt, a k-pop group, that showcases information about the members and their music in an interactive way",
       image: project4,
       date: "april 2024",
     },
     {
       name: "aura",
       description:
-        "a mobile app dedicated for deaf people to feel music in a different way through visuals made by people with color synthesia",
+        "a mobile app that reimagines how deaf individuals experience music — using visuals created by people with color synesthesia",
       image: project2,
       date: "april 2024",
     },
     {
       name: "fishtank",
       description:
-        "a mobile app that allows for students in college to meet new friends by joining activities happening on campus",
+        "an ai-powered app that curates local events based on user prompts and interests — designed to foster connection and well-being among college students",
       image: project3,
       date: "april 2024",
     },
     {
       name: "e-go",
       description:
-        "a mobile app that helps people that need a ride without having to search on multiple platforms",
+        "a mobile app that helps students find convenient, affordable rides by integrating public transportation options and offering rewards for using them",
       image: project1,
       date: "may 2024",
     },
   ];
+
+  let song_url =
+    "https://open.spotify.com/embed/track/0xtIp0lgccN85GfGOekS5L?utm_source=generator";
 </script>
 
 <svelte:head>
@@ -80,7 +87,7 @@
   />
 </svelte:head>
 
-<main>
+<body class="bg-black text-white">
   <NavBar />
   <div
     class="flex flex-col rounded-md mr-5 ml-5 sm:ml-16 sm:mr-16 sm:pt-28 md:pb-64"
@@ -105,39 +112,25 @@
     </h2>
   </div>
 
-  <div class="flex flex-col ml-5 mr-5 sm:ml-16 sm:mr-16 mt-24">
-    <h1 class="text-3xl sm:text-4xl mb-5">college highlights</h1>
-    <div class="flex flex-wrap">
-      {#each college_highlights as highlight}
-        <div class="w-full sm:w-1/3 p-1 mb-1">
-          <img
-            src={highlight.img}
-            alt={highlight.title}
-            class="rounded-sm h-64 lg:h-64 w-full object-cover saturate-0 hover:saturate-100 transition-all duration-400"
-          />
-        </div>
-      {/each}
-    </div>
-  </div>
+  <Gallery {college_highlights} />
 
   <div
     class="grid grid-cols-1 sm:grid-cols-2 gap-8 ml-5 mr-5 sm:ml-16 sm:mr-16 mt-24"
-    id="projects"
   >
     <h1 class="col-span-1 sm:col-span-2 text-4xl">projects</h1>
     {#each projects as project}
-      <div class="relative group mb-8">
+      <div class="relative mb-8 group">
         <div class="flex flex-row justify-between">
           <h2 class="text-lg sm:text-2xl mb-2">{project.name}</h2>
           <p class="text-lg sm:text-2xl mb-2">{project.date}</p>
         </div>
         <img
           src={project.image}
-          alt="project 2"
-          class="rounded-md w-full h-full object-cover"
+          alt="project"
+          class="rounded-md w-full h-full object-cover transition-opacity duration-500 group-hover:opacity-20"
         />
         <p
-          class="description text-md sm:text-lg m-4 text-white absolute inset-0 flex items-center text-center justify-center opacity-0"
+          class="text-md sm:text-lg m-4 text-white absolute inset-0 flex items-center justify-center text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         >
           {project.description}
         </p>
@@ -178,54 +171,19 @@
         after six months of planning, we successfully launched the event and
         received 100+ applicants. it was one of the most meaningful moments of
         my college experience, and it reminded me how much i love working with
-        others to bring ideas to life. i’m now interning as a user experience researcher
-        at lpl financial in san diego to explore how user insights can shape stronger, 
-        more meaningful designs. my goal is to keep building experiences that truly connect.
+        others to bring ideas to life. i’m now interning as a user experience
+        researcher at lpl financial in san diego to explore how user insights
+        can shape stronger, more meaningful designs. my goal is to keep building
+        experiences that truly connect.
       </p>
     </section>
   </div>
 
-  <div class="text-center mt-16 m-3">
-    <p class="text-lg mb-2">
-      thank you for making it this far, here is a song recommendation for you!
-    </p>
-    <iframe
-      style="border-radius:12px; display:block; margin:auto;"
-      class="w-full sm:w-96"
-      src="https://open.spotify.com/embed/track/0xtIp0lgccN85GfGOekS5L?utm_source=generator"
-      height="100"
-      frameBorder="0"
-      allowfullscreen
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-      title="Spotify Song Player"
-    >
-    </iframe>
-  </div>
-  <p class="text-center text-md md:text-lg">
-    made with <span class="text-sm">💚</span> by sama ahmed
-  </p>
-  <p class="text-center text-md md:text-lg -mt-2">
-    all rights reserved © 2025
-  </p>
-</main>
+  <Footer {song_url} />
+</body>
 
 <style>
   :global(body) {
-    background-color: black;
-    color: white;
     font-family: "Alegreya Sans SC", sans-serif;
-  }
-
-  .group img {
-    transition: 0.5s;
-  }
-
-  .group:hover img {
-    opacity: 0.2;
-  }
-
-  .group:hover .description {
-    opacity: 1;
   }
 </style>
