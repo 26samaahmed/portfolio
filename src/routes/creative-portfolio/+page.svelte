@@ -115,7 +115,7 @@
   <Gallery {college_highlights} />
 
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 gap-8 ml-5 mr-5 sm:ml-16 sm:mr-16 mt-24"
+    class="grid grid-cols-1 sm:grid-cols-2 gap-8 ml-5 mr-5 sm:ml-16 sm:mr-16 mt-24" id="projects"
   >
     <h1 class="col-span-1 sm:col-span-2 text-4xl">projects</h1>
     {#each projects as project}
@@ -174,7 +174,7 @@
         others to bring ideas to life. i’m now interning as a user experience
         researcher at lpl financial in san diego to explore how user insights
         can shape stronger, more meaningful designs. my goal is to keep building
-        experiences that truly connect.
+        experiences that truly connect ⋆ 𐙚 ̊.
       </p>
     </section>
   </div>

@@ -69,7 +69,7 @@
     },
     {
       name: "acmcsuf.com",
-      link: "https://github.com/26samaahmed/acmcsuf.com",
+      link: "https://github.com/EthanThatOneKid/acmcsuf.com",
       teck_stack: ["sveltekit", "typescript"],
       description:
         "☆ the official website for csuf’s acm chapter, built with 70+ contributors. it highlights club info, events, and resources for members.",

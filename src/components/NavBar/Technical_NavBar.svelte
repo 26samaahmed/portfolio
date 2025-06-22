@@ -3,7 +3,7 @@
   let buttons = [
     { name: "home", link: "/" },
     { name: "projects", link: "#projects" },
-    { name: "resume", link: "/Sama_Ahmed_Resume.pdf" },
+    { name: "resume", link: "/Sama_Ahmed_Resume.pdf", target: "_blank"  },
   ];
 
   let icons = [

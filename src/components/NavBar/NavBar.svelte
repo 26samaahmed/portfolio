@@ -52,6 +52,7 @@
       {:else}
         <a
           href={button.link}
+          target={button.target || "_self"}
           style="--underline-color: {underlineColor};"
           class="text-lg sm:text-3xl inline-block relative after:content-[''] after:absolute after:w-full after:h-0.5 after:bg-[var(--underline-color)] after:bottom-0 after:left-0 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-[250ms] after:ease-out hover:after:scale-x-100 hover:after:origin-bottom-left"
         >
