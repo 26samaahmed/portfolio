@@ -13,9 +13,7 @@
   }
 </script>
 
-<nav
-  class="flex mr-5 ml-5 sm:ml-16 sm:mr-16 pt-6 items-center"
->
+<nav class="flex mr-5 ml-5 sm:ml-16 sm:mr-16 pt-6 items-center">
   <div class="flex-1 justify-start space-x-3 sm:space-x-5">
     {#each icons as icon}
       <a
@@ -29,11 +27,9 @@
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
-          width="100"
-          height="100"
           viewBox="0 0 50 50"
         >
-          <path fill={icon_color} d={icon.path}></path>
+          <path d={icon.path} fill={icon_color}></path>
         </svg>
       </a>
     {/each}

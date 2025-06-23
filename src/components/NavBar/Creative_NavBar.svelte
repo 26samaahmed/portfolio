@@ -8,11 +8,6 @@
       link: "https://www.samahmed.info/design-gallery",
       target: "_blank",
     },
-    {
-      name: "resume",
-      link: "/Sama_Ahmed_Design_2024_Resume.pdf",
-      target: "_blank",
-    },
   ];
 
   let icons = [

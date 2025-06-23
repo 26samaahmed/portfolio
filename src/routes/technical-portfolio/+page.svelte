@@ -67,7 +67,7 @@
         "☆ the official site for csuf’s first student-led designathon, built with a team of 4. it features the event schedule, sponsors, and more.",
     },
     {
-      name: "acmcsuf.com",
+      name: "acm csuf website",
       link: "https://github.com/EthanThatOneKid/acmcsuf.com",
       teck_stack: ["sveltekit", "typescript"],
       description:
