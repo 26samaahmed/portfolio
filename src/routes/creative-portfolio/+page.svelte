@@ -75,6 +75,17 @@
 
   let song_url =
     "https://open.spotify.com/embed/track/19kHhX6f6EfLU7rcO3RqjO?utm_source=generator";
+
+  let color = "#FFFFFF";
+  let path1 = {
+    href: "/",
+    text: "return home",
+  };
+
+  let path2 = {
+    href: "/technical-portfolio",
+    text: "explore technical portfolio",
+  };
 </script>
 
 <svelte:head>
@@ -115,7 +126,8 @@
   <Gallery {college_highlights} />
 
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 gap-8 ml-5 mr-5 sm:ml-16 sm:mr-16 mt-24" id="projects"
+    class="grid grid-cols-1 sm:grid-cols-2 gap-8 ml-5 mr-5 sm:ml-16 sm:mr-16 mt-24"
+    id="projects"
   >
     <h1 class="col-span-1 sm:col-span-2 text-4xl">projects</h1>
     {#each projects as project}
@@ -179,7 +191,7 @@
     </section>
   </div>
 
-  <Footer {song_url} />
+  <Footer {song_url} {path1} {path2} {color} />
 </body>
 
 <style>

@@ -91,6 +91,17 @@
 
   let song_url =
     "https://open.spotify.com/embed/track/6Stw2SepJwrkjT60fusHxR?utm_source=generator";
+
+  let color = "#000000";
+  let path1 = {
+    href: "/",
+    text: "return home",
+  };
+
+  let path2 = {
+    href: "/creative-portfolio",
+    text: "explore creative portfolio",
+  };
 </script>
 
 <svelte:head>
@@ -217,7 +228,7 @@
     </section>
   </div>
 
-  <Footer {song_url} />
+  <Footer {song_url} {path1} {path2} {color} />
 </body>
 
 <style>
