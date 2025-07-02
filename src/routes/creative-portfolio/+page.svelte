@@ -77,15 +77,17 @@
     "https://open.spotify.com/embed/track/19kHhX6f6EfLU7rcO3RqjO?utm_source=generator";
 
   let color = "#FFFFFF";
+
   let path1 = {
+    href: "/technical-portfolio",
+    text: "explore technical portfolio",
+  };
+  
+  let path2 = {
     href: "/",
     text: "return home",
   };
 
-  let path2 = {
-    href: "/technical-portfolio",
-    text: "explore technical portfolio",
-  };
 </script>
 
 <svelte:head>
