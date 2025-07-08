@@ -130,7 +130,7 @@
     </div>
 
     <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5 text-left">
-      frontend-focused developer with a passion for <em
+      a frontend-focused developer with a passion for <em
         >building responsive web applications</em
       >
       and

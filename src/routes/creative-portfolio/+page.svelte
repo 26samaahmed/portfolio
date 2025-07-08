@@ -115,7 +115,7 @@
       </h1>
     </div>
     <h2 class="text-lg sm:text-xl md:text-3xl xl:text-4xl mb-5 text-left">
-      ui/ux enthusiast with a passion for <em
+      a ui/ux enthusiast with a passion for <em
         >designing intuitive web interfaces</em
       >
       and
